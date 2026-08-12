@@ -31,7 +31,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           <ScrollReveal>
-            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 hover:shadow-lg transition-shadow h-full">
+            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 ease-out h-full">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <Eye className="w-6 h-6 text-primary" />
@@ -42,7 +42,7 @@ export default function About() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
-            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 hover:shadow-lg transition-shadow h-full">
+            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 hover:shadow-xl hover:-translate-y-1 transition-all duration-500 ease-out h-full">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <Target className="w-6 h-6 text-primary" />
@@ -62,7 +62,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {values.map((value, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
-                <div className="text-center p-6 bg-accent/50 rounded-xl border border-border hover:border-primary/30 hover:bg-accent transition-all h-full">
+                <div className="text-center p-6 bg-accent/50 rounded-xl border border-border hover:border-primary/40 hover:bg-accent hover:-translate-y-1 transition-all duration-500 ease-out h-full">
                   <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center">
                     <ShieldCheck className="w-5 h-5 text-primary" />
                   </div>

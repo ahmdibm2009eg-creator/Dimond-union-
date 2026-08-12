@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 38 30% 96%;
+    --background: 0 0% 100%;
     --foreground: 350 32% 12%;
     --card: 0 0% 100%;
     --card-foreground: 350 32% 12%;
@@ -14,16 +14,16 @@
     --popover-foreground: 350 32% 12%;
     --primary: 356 72% 32%;
     --primary-foreground: 40 47% 97%;
-    --secondary: 38 24% 91%;
+    --secondary: 0 0% 96%;
     --secondary-foreground: 350 32% 15%;
-    --muted: 38 18% 92%;
-    --muted-foreground: 350 10% 38%;
-    --accent: 356 42% 94%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 350 8% 40%;
+    --accent: 0 0% 97%;
     --accent-foreground: 356 72% 30%;
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 98%;
-    --border: 38 12% 88%;
-    --input: 38 12% 88%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
     --ring: 356 72% 32%;
     --chart-1: 356 72% 32%;
     --chart-2: 210 12% 44%;
@@ -35,13 +35,13 @@
     --font-body: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
     --font-display: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --sidebar-background: 38 18% 97%;
+    --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 350 32% 12%;
     --sidebar-primary: 356 72% 32%;
     --sidebar-primary-foreground: 40 47% 97%;
-    --sidebar-accent: 356 42% 94%;
+    --sidebar-accent: 0 0% 96%;
     --sidebar-accent-foreground: 356 72% 30%;
-    --sidebar-border: 38 12% 88%;
+    --sidebar-border: 0 0% 90%;
     --sidebar-ring: 356 72% 32%;
   }
 
@@ -88,10 +88,18 @@
 
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   body {
     @apply bg-background text-foreground font-body;
+  }
+
+  /* Silky global transitions for interactive elements */
+  a, button {
+    @apply transition-all duration-300 ease-out;
   }
 }
 

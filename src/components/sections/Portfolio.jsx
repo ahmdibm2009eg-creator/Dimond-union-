@@ -160,7 +160,7 @@ export default function Portfolio() {
           <ScrollReveal key={project.id} delay={i % 3 * 0.1}>
                 <div
               onClick={() => !adminMode && setSelectedProject(project)}
-              className={`diamond-frame group relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-xl transition-all ${adminMode ? 'cursor-default' : 'cursor-pointer'}`}>
+              className={`diamond-frame group relative overflow-hidden rounded-2xl border border-border bg-card shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 ease-out ${adminMode ? 'cursor-default' : 'cursor-pointer'}`}>
               
                   <div className="relative h-64 overflow-hidden">
                     <img

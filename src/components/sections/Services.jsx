@@ -29,7 +29,7 @@ export default function Services() {
             const Icon = icons[i] || Presentation;
             return (
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
-                <div className="group bg-card border border-border rounded-2xl p-8 hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full">
+                <div className="group bg-card border border-border rounded-2xl p-8 hover:shadow-xl hover:border-primary/30 hover:-translate-y-1 transition-all duration-500 ease-out h-full">
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Icon className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
                   </div>

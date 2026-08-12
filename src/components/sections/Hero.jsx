@@ -39,7 +39,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-            className="relative w-28 h-28 sm:w-44 sm:h-44">
+            className="relative w-44 h-44 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
 
             <Diamond3D />
           </motion.div>
