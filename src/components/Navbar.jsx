@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button onClick={() => scrollTo('home')} className="flex items-center">
-            <img src="https://media.base44.com/images/public/6a75b32be1751696858b1e3d/1d102d7e0_photo_6035282697564917489_y.jpg" alt="Diamond Union" className="h-12 w-auto object-contain opacity-100" />
+            <img src="https://media.base44.com/images/public/6a75b32be1751696858b1e3d/1d102d7e0_photo_6035282697564917489_y.jpg" alt="Diamond Union" className="object-contain opacity-100 h-1w-auto" />
           </button>
 
           {/* Desktop Nav */}
