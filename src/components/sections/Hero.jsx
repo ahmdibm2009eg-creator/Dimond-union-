@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1, ease: 'easeOut' }}
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
+          className="sm:text-4xl font-bold text-foreground tracking-tight text-4xl lg:text-4xl">
           
           Diamond Union
         </motion.h1>
