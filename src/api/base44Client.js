@@ -56,9 +56,21 @@ const entityMethods = (name) => ({
 });
 
 const seedProjects = [
-  { id: 1, name_ar: 'جناح معرضريادة', name_en: 'Riyada Exhibition Stand', category: 'exhibition', images: [], order: 1 },
-  { id: 2, name_ar: 'تصميم داخلي لمكتب', name_en: 'Office Interior Design', category: 'interior', images: [], order: 2 },
-  { id: 3, name_ar: 'لافتة خارجية', name_en: 'Outdoor Signage', category: 'signage', images: [], order: 3 },
+  { id: 1, name_ar: 'جناح معرض رياضة', name_en: 'Riyada Exhibition Stand', category: 'exhibition', images: [
+    'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop'
+  ], order: 1 },
+  { id: 2, name_ar: 'تصميم داخلي لمكتب', name_en: 'Office Interior Design', category: 'interior', images: [
+    'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop'
+  ], order: 2 },
+  { id: 3, name_ar: 'لافتة خارجية', name_en: 'Outdoor Signage', category: 'signage', images: [
+    'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1464938050520-ef2571e0d6e0?w=800&h=600&fit=crop'
+  ], order: 3 },
 ];
 
 const seedContent = [
