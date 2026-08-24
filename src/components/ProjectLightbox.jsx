@@ -10,6 +10,7 @@ export default function ProjectLightbox({ project, onClose }) {
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [flipKey, setFlipKey] = useState(0);
   const dragStart = useRef(null);
+  const touchStart = useRef(null);
   const images = project.images || [project.thumb];
 
   useEffect(() => {
@@ -49,6 +50,21 @@ export default function ProjectLightbox({ project, onClose }) {
   };
   const onPointerUp = () => { dragStart.current = null; };
 
+  // Touch swipe to flip between images (only when not zoomed)
+  const onTouchStart = (e) => {
+    if (zoom > 1) return;
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  };
+  const onTouchEnd = (e) => {
+    if (!touchStart.current || zoom > 1) return;
+    const dx = e.changedTouches[0].clientX - touchStart.current.x;
+    const dy = e.changedTouches[0].clientY - touchStart.current.y;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+      if (dx > 0) prev(); else next();
+    }
+    touchStart.current = null;
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
@@ -76,6 +92,8 @@ export default function ProjectLightbox({ project, onClose }) {
         <div
           className="relative bg-black rounded-2xl overflow-hidden select-none"
           style={{ height: '60vh', perspective: '1200px' }}
+          onTouchStart={onTouchStart}
+          onTouchEnd={onTouchEnd}
         >
           <AnimatePresence mode="wait">
             <motion.div
