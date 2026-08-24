@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { projects as seedProjects } from '@/lib/translations';
-import { base44 } from '@/api/base44Client';
-import { Images, Lock, Palette, Pencil, Plus, Trash2, Type } from 'lucide-react';
+import { base44, exportData, importData } from '@/api/base44Client';
+import { Eye, Images, Lock, Palette, Pencil, Plus, Trash2, Type, X, Download, Upload } from 'lucide-react';
 import ProjectLightbox from '@/components/ProjectLightbox';
 import ProjectImageEditor from '@/components/ProjectImageEditor';
 import ProjectCreateModal from '@/components/ProjectCreateModal';
@@ -32,6 +32,8 @@ export default function Portfolio() {
   const [passwordError, setPasswordError] = useState(false);
   const [entityProjects, setEntityProjects] = useState([]);
   const [loading, setLoading] = useState(true);
+  const tapCountRef = useRef(0);
+  const tapTimerRef = useRef(null);
 
   const loadProjects = async () => {
     try {
@@ -59,9 +61,25 @@ export default function Portfolio() {
 
   const filtered = filter === 'all' ? projects : projects.filter((p) => p.category === filter);
 
+  const handleEyeTap = useCallback(() => {
+    tapCountRef.current += 1;
+    if (tapTimerRef.current) clearTimeout(tapTimerRef.current);
+    tapTimerRef.current = setTimeout(() => { tapCountRef.current = 0; }, 3000);
+    if (tapCountRef.current >= 5) {
+      tapCountRef.current = 0;
+      clearTimeout(tapTimerRef.current);
+      if (adminMode) {
+        setAdminMode(false);
+      } else {
+        setShowPasswordPrompt(true);
+      }
+    }
+  }, [adminMode]);
+
   const handlePassword = (e) => {
     e.preventDefault();
-    if (passwordInput === '1516') {
+    const expected = import.meta.env.VITE_ADMIN_PASSWORD || '1516';
+    if (passwordInput === expected) {
       setAdminMode(true);
       setShowPasswordPrompt(false);
       setPasswordInput('');
@@ -77,11 +95,12 @@ export default function Portfolio() {
       : `Are you sure you want to delete "${project.name[lang] || project.name.en}"?`;
     if (!window.confirm(confirmMsg)) return;
     try {
+      console.log('Deleting project:', project.id);
       await base44.entities.Project.delete(project.id);
       loadProjects();
     } catch (err) {
-      console.error(err);
-      window.alert(lang === 'ar' ? 'حدث خطأ أثناء الحذف' : 'An error occurred while deleting');
+      console.error('Delete failed:', err.message);
+      window.alert(lang === 'ar' ? `حدث خطأ أثناء الحذف: ${err.message}` : `An error occurred while deleting: ${err.message}`);
     }
   };
 
@@ -117,11 +136,11 @@ export default function Portfolio() {
             </button>
           )}
           <button
-            onClick={() => adminMode ? setAdminMode(false) : setShowPasswordPrompt(true)}
+            onClick={handleEyeTap}
             className={`ms-2 p-2 rounded-full transition-all opacity-0 ${adminMode ? 'bg-primary text-white' : 'text-muted-foreground hover:text-primary'}`}
-            title={adminMode ? lang === 'ar' ? 'إنهاء التحرير' : 'Exit Edit' : lang === 'ar' ? 'تحرير الصور' : 'Edit Images'}>
+            title={adminMode ? (lang === 'ar' ? 'إنهاء التحرير' : 'Exit Edit') : (lang === 'ar' ? 'تحرير الصور' : 'Edit Images')}>
             
-            {adminMode ? <Lock size={18} /> : <Pencil size={18} />}
+            {adminMode ? <Lock size={18} /> : <Eye size={18} />}
           </button>
           {adminMode &&
           <>
@@ -146,16 +165,49 @@ export default function Portfolio() {
                 <Palette size={16} />
                 {lang === 'ar' ? 'تعديل التصميم' : 'Edit Design'}
               </button>
+              <button
+              onClick={exportData}
+              className="ms-2 px-4 py-2 rounded-full bg-green-600 text-white text-sm font-medium hover:bg-green-700 transition-colors flex items-center gap-1.5"
+              title={lang === 'ar' ? 'تصدير البيانات' : 'Export Data'}>
+                <Download size={16} />
+                {lang === 'ar' ? 'تصدير' : 'Export'}
+              </button>
+              <label className="ms-2 px-4 py-2 rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors flex items-center gap-1.5 cursor-pointer">
+                <Upload size={16} />
+                {lang === 'ar' ? 'استيراد' : 'Import'}
+                <input
+                  type="file"
+                  accept=".json"
+                  className="hidden"
+                  onChange={async (e) => {
+                    const file = e.target.files?.[0];
+                    if (!file) return;
+                    try {
+                      await importData(file);
+                      loadProjects();
+                      window.location.reload();
+                    } catch (err) {
+                      window.alert(lang === 'ar' ? `خطأ في الاستيراد: ${err.message}` : `Import error: ${err.message}`);
+                    }
+                  }}
+                />
+              </label>
             </>
           }
         </div>
 
+
         {showPasswordPrompt &&
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={() => setShowPasswordPrompt(false)}>
-            <form onSubmit={handlePassword} className="bg-card rounded-2xl p-8 max-w-sm w-full" onClick={(e) => e.stopPropagation()}>
-              <div className="flex items-center gap-3 mb-6">
-                <Lock className="w-6 h-6 text-primary" />
-                <h3 className="text-xl font-bold text-foreground">{lang === 'ar' ? 'كلمة المرور' : 'Password'}</h3>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={() => {setShowPasswordPrompt(false);setPasswordInput('');setPasswordError(false);}}>
+            <form onSubmit={handlePassword} className="bg-card rounded-2xl p-8 max-w-sm w-full shadow-2xl" onClick={(e) => e.stopPropagation()}>
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-3">
+                  <Lock className="w-6 h-6 text-primary" />
+                  <h3 className="text-xl font-bold text-foreground">{lang === 'ar' ? 'كلمة المرور' : 'Password'}</h3>
+                </div>
+                <button type="button" onClick={() => {setShowPasswordPrompt(false);setPasswordInput('');setPasswordError(false);}} className="text-muted-foreground hover:text-foreground transition-colors">
+                  <X size={20} />
+                </button>
               </div>
               <input
               type="password"
@@ -211,22 +263,22 @@ export default function Portfolio() {
                   </div>
                   <div className="absolute bottom-0 inset-x-0 p-5 flex items-center justify-between">
                     <h3 className="text-lg font-bold text-white">{project.name[lang]}</h3>
+                    {adminMode && (
                     <div className="flex items-center gap-2">
-                  {adminMode &&
-                  <button
-                    onClick={(e) => {e.stopPropagation();setEditingProject(project);}}
-                    className="bg-primary text-white rounded-full p-2 hover:bg-primary/90 transition-colors"
-                    title={lang === 'ar' ? 'تعديل الصور' : 'Edit Images'}>
-                    <Pencil size={16} />
-                  </button>
-                  }
-                  <button
-                    onClick={(e) => {e.stopPropagation();handleDeleteProject(project);}}
-                    className="bg-destructive text-white rounded-full p-2 hover:bg-destructive/90 transition-colors"
-                    title={lang === 'ar' ? 'حذف المشروع' : 'Delete Project'}>
-                    <Trash2 size={16} />
-                  </button>
-                </div>
+                      <button
+                        onClick={(e) => {e.stopPropagation();setEditingProject(project);}}
+                        className="bg-primary text-white rounded-full p-2 hover:bg-primary/90 transition-colors"
+                        title={lang === 'ar' ? 'تعديل الصور' : 'Edit Images'}>
+                        <Pencil size={16} />
+                      </button>
+                      <button
+                        onClick={(e) => {e.stopPropagation();handleDeleteProject(project);}}
+                        className="bg-destructive text-white rounded-full p-2 hover:bg-destructive/90 transition-colors"
+                        title={lang === 'ar' ? 'حذف المشروع' : 'Delete Project'}>
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
+                    )}
                   </div>
                 </div>
               </ScrollReveal>
