@@ -7,19 +7,19 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 350 32% 12%;
+    --foreground: 0 0% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 350 32% 12%;
+    --card-foreground: 0 0% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 350 32% 12%;
+    --popover-foreground: 0 0% 10%;
     --primary: 356 72% 32%;
     --primary-foreground: 40 47% 97%;
     --secondary: 0 0% 96%;
-    --secondary-foreground: 350 32% 15%;
+    --secondary-foreground: 0 0% 10%;
     --muted: 0 0% 96%;
-    --muted-foreground: 350 8% 40%;
-    --accent: 0 0% 97%;
-    --accent-foreground: 356 72% 30%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 356 72% 32%;
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 90%;
@@ -27,20 +27,21 @@
     --ring: 356 72% 32%;
     --chart-1: 356 72% 32%;
     --chart-2: 210 12% 44%;
-    --chart-3: 350 20% 18%;
+    --chart-3: 0 0% 10%;
     --chart-4: 43 68% 62%;
     --chart-5: 28 82% 64%;
     --radius: 0.5rem;
+    --root-font-size: 16px;
     --font-heading: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
     --font-body: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
     --font-display: 'IBM Plex Sans Arabic', 'IBM Plex Sans', sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 350 32% 12%;
+    --sidebar-foreground: 0 0% 10%;
     --sidebar-primary: 356 72% 32%;
     --sidebar-primary-foreground: 40 47% 97%;
     --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: 356 72% 30%;
+    --sidebar-accent-foreground: 356 72% 32%;
     --sidebar-border: 0 0% 90%;
     --sidebar-ring: 356 72% 32%;
   }
@@ -87,6 +88,7 @@
   }
 
   html {
+    font-size: var(--root-font-size, 16px);
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

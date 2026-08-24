@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { projects as seedProjects } from '@/lib/translations';
 import { base44 } from '@/api/base44Client';
-import { Images, Lock, Pencil, Plus, Trash2, Type } from 'lucide-react';
+import { Images, Lock, Palette, Pencil, Plus, Trash2, Type } from 'lucide-react';
 import ProjectLightbox from '@/components/ProjectLightbox';
 import ProjectImageEditor from '@/components/ProjectImageEditor';
 import ProjectCreateModal from '@/components/ProjectCreateModal';
 import ContentEditorModal from '@/components/ContentEditorModal';
+import StyleEditorModal from '@/components/StyleEditorModal';
 import ScrollReveal from '@/components/ScrollReveal';
 
 const normalizeProject = (p) => ({
@@ -24,6 +25,7 @@ export default function Portfolio() {
   const [editingProject, setEditingProject] = useState(null);
   const [creatingProject, setCreatingProject] = useState(false);
   const [editingContent, setEditingContent] = useState(false);
+  const [editingDesign, setEditingDesign] = useState(false);
   const [adminMode, setAdminMode] = useState(false);
   const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
   const [passwordInput, setPasswordInput] = useState('');
@@ -133,9 +135,16 @@ export default function Portfolio() {
               <button
               onClick={() => setEditingContent(true)}
               className="ms-2 px-4 py-2 rounded-full bg-foreground text-white text-sm font-medium hover:bg-foreground/90 transition-colors flex items-center gap-1.5">
-              
+
                 <Type size={16} />
                 {lang === 'ar' ? 'تعديل النصوص' : 'Edit Texts'}
+              </button>
+              <button
+              onClick={() => setEditingDesign(true)}
+              className="ms-2 px-4 py-2 rounded-full bg-primary text-white text-sm font-medium hover:bg-primary/90 transition-colors flex items-center gap-1.5">
+
+                <Palette size={16} />
+                {lang === 'ar' ? 'تعديل التصميم' : 'Edit Design'}
               </button>
             </>
           }
@@ -249,6 +258,12 @@ export default function Portfolio() {
       <ContentEditorModal
         onClose={() => setEditingContent(false)}
         onUpdated={reloadContent} />
+
+      }
+
+      {editingDesign &&
+      <StyleEditorModal
+        onClose={() => setEditingDesign(false)} />
 
       }
     </section>);

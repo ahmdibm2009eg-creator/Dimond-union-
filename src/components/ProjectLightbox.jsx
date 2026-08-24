@@ -1,10 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useLanguage } from '@/lib/LanguageContext';
 
 export default function ProjectLightbox({ project, onClose }) {
   const { lang } = useLanguage();
   const [current, setCurrent] = useState(0);
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [flipKey, setFlipKey] = useState(0);
+  const dragStart = useRef(null);
   const images = project.images || [project.thumb];
 
   useEffect(() => {
@@ -19,10 +24,30 @@ export default function ProjectLightbox({ project, onClose }) {
       document.removeEventListener('keydown', handleKey);
       document.body.style.overflow = '';
     };
-  }, [current]);
+  }, []);
 
-  const next = () => setCurrent(i => (i + 1) % images.length);
-  const prev = () => setCurrent(i => (i - 1 + images.length) % images.length);
+  const goTo = (i) => {
+    setZoom(1);
+    setPan({ x: 0, y: 0 });
+    setFlipKey(k => k + 1);
+    setCurrent(i);
+  };
+  const next = () => goTo((current + 1) % images.length);
+  const prev = () => goTo((current - 1 + images.length) % images.length);
+
+  const zoomIn = () => setZoom(z => Math.min(z + 0.25, 3));
+  const zoomOut = () => { setZoom(z => Math.max(z - 0.25, 1)); if (zoom <= 1.25) setPan({ x: 0, y: 0 }); };
+  const resetZoom = () => { setZoom(1); setPan({ x: 0, y: 0 }); };
+
+  const onPointerDown = (e) => {
+    if (zoom <= 1) return;
+    dragStart.current = { x: e.clientX - pan.x, y: e.clientY - pan.y };
+  };
+  const onPointerMove = (e) => {
+    if (!dragStart.current || zoom <= 1) return;
+    setPan({ x: e.clientX - dragStart.current.x, y: e.clientY - dragStart.current.y });
+  };
+  const onPointerUp = () => { dragStart.current = null; };
 
   return (
     <div
@@ -47,31 +72,87 @@ export default function ProjectLightbox({ project, onClose }) {
           <p className="text-white/60 text-sm mt-1">{current + 1} / {images.length}</p>
         </div>
 
-        {/* Main Image */}
-        <div className="relative bg-black rounded-2xl overflow-hidden" style={{ height: '60vh' }}>
-          <img
-            src={images[current]}
-            alt={project.name[lang]}
-            className="w-full h-full object-contain"
-          />
+        {/* Main Image with flip + zoom */}
+        <div
+          className="relative bg-black rounded-2xl overflow-hidden select-none"
+          style={{ height: '60vh', perspective: '1200px' }}
+        >
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={flipKey}
+              initial={{ rotateY: 90, opacity: 0 }}
+              animate={{ rotateY: 0, opacity: 1 }}
+              exit={{ rotateY: -90, opacity: 0 }}
+              transition={{ duration: 0.45, ease: 'easeInOut' }}
+              className="w-full h-full"
+              style={{ transformStyle: 'preserve-3d' }}
+            >
+              <img
+                src={images[current]}
+                alt={project.name[lang]}
+                className="w-full h-full object-contain"
+                style={{
+                  transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+                  transformOrigin: 'center',
+                  transition: dragStart.current ? 'none' : 'transform 0.2s ease-out',
+                  cursor: zoom > 1 ? (dragStart.current ? 'grabbing' : 'grab') : 'default'
+                }}
+                draggable={false}
+                onPointerDown={onPointerDown}
+                onPointerMove={onPointerMove}
+                onPointerUp={onPointerUp}
+                onPointerLeave={onPointerUp}
+              />
+            </motion.div>
+          </AnimatePresence>
 
           {/* Nav arrows */}
           {images.length > 1 && (
             <>
               <button
                 onClick={prev}
-                className="absolute start-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-primary text-white rounded-full p-2 transition-colors"
+                className="absolute start-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-primary text-white rounded-full p-2 transition-colors z-10"
               >
                 <ChevronLeft size={24} />
               </button>
               <button
                 onClick={next}
-                className="absolute end-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-primary text-white rounded-full p-2 transition-colors"
+                className="absolute end-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-primary text-white rounded-full p-2 transition-colors z-10"
               >
                 <ChevronRight size={24} />
               </button>
             </>
           )}
+
+          {/* Zoom controls */}
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1 bg-black/60 backdrop-blur-sm rounded-full px-2 py-1.5 z-10">
+            <button
+              onClick={zoomOut}
+              disabled={zoom <= 1}
+              className="text-white hover:text-primary disabled:opacity-40 disabled:hover:text-white p-1.5 transition-colors"
+              title={lang === 'ar' ? 'تصغير' : 'Zoom out'}
+            >
+              <ZoomOut size={18} />
+            </button>
+            <span className="text-white text-xs w-12 text-center tabular-nums">
+              {Math.round(zoom * 100)}%
+            </span>
+            <button
+              onClick={zoomIn}
+              disabled={zoom >= 3}
+              className="text-white hover:text-primary disabled:opacity-40 disabled:hover:text-white p-1.5 transition-colors"
+              title={lang === 'ar' ? 'تكبير' : 'Zoom in'}
+            >
+              <ZoomIn size={18} />
+            </button>
+            <button
+              onClick={resetZoom}
+              className="text-white hover:text-primary p-1.5 transition-colors"
+              title={lang === 'ar' ? 'إعادة' : 'Reset'}
+            >
+              <RotateCcw size={16} />
+            </button>
+          </div>
         </div>
 
         {/* Thumbnails */}
@@ -80,7 +161,7 @@ export default function ProjectLightbox({ project, onClose }) {
             {images.map((img, i) => (
               <button
                 key={i}
-                onClick={() => setCurrent(i)}
+                onClick={() => goTo(i)}
                 className={`w-16 h-12 rounded-lg overflow-hidden border-2 transition-all ${
                   i === current ? 'border-primary' : 'border-white/20 opacity-60 hover:opacity-100'
                 }`}
