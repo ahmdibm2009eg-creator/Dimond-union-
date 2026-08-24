@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { projects as seedProjects } from '@/lib/translations';
 import { base44 } from '@/api/base44Client';
-import { Images, Lock, Pencil, Plus, Type } from 'lucide-react';
+import { Images, Lock, Pencil, Plus, Trash2, Type } from 'lucide-react';
 import ProjectLightbox from '@/components/ProjectLightbox';
 import ProjectImageEditor from '@/components/ProjectImageEditor';
 import ProjectCreateModal from '@/components/ProjectCreateModal';
@@ -66,6 +66,20 @@ export default function Portfolio() {
       setPasswordError(false);
     } else {
       setPasswordError(true);
+    }
+  };
+
+  const handleDeleteProject = async (project) => {
+    const confirmMsg = lang === 'ar'
+      ? `هل أنت متأكد من حذف مشروع "${project.name[lang] || project.name.ar}"؟`
+      : `Are you sure you want to delete "${project.name[lang] || project.name.en}"?`;
+    if (!window.confirm(confirmMsg)) return;
+    try {
+      await base44.entities.Project.delete(project.id);
+      loadProjects();
+    } catch (err) {
+      console.error(err);
+      window.alert(lang === 'ar' ? 'حدث خطأ أثناء الحذف' : 'An error occurred while deleting');
     }
   };
 
@@ -189,12 +203,20 @@ export default function Portfolio() {
                   <div className="absolute bottom-0 inset-x-0 p-5 flex items-center justify-between">
                     <h3 className="text-lg font-bold text-white">{project.name[lang]}</h3>
                     {adminMode &&
-                <button
-                  onClick={(e) => {e.stopPropagation();setEditingProject(project);}}
-                  className="bg-primary text-white rounded-full p-2 hover:bg-primary/90 transition-colors">
-                  
-                        <Pencil size={16} />
-                      </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={(e) => {e.stopPropagation();setEditingProject(project);}}
+                    className="bg-primary text-white rounded-full p-2 hover:bg-primary/90 transition-colors"
+                    title={lang === 'ar' ? 'تعديل الصور' : 'Edit Images'}>
+                    <Pencil size={16} />
+                  </button>
+                  <button
+                    onClick={(e) => {e.stopPropagation();handleDeleteProject(project);}}
+                    className="bg-destructive text-white rounded-full p-2 hover:bg-destructive/90 transition-colors"
+                    title={lang === 'ar' ? 'حذف المشروع' : 'Delete Project'}>
+                    <Trash2 size={16} />
+                  </button>
+                </div>
                 }
                   </div>
                 </div>
