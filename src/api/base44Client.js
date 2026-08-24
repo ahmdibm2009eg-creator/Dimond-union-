@@ -1,4 +1,4 @@
-const DB_KEY = 'diamond_union_db';
+const DB_KEY = 'diamond_union_db_v2';
 
 const getDB = () => {
   try {
