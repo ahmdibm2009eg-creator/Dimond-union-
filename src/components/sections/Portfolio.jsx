@@ -211,14 +211,15 @@ export default function Portfolio() {
                   </div>
                   <div className="absolute bottom-0 inset-x-0 p-5 flex items-center justify-between">
                     <h3 className="text-lg font-bold text-white">{project.name[lang]}</h3>
-                    {adminMode &&
-                <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2">
+                  {adminMode &&
                   <button
                     onClick={(e) => {e.stopPropagation();setEditingProject(project);}}
                     className="bg-primary text-white rounded-full p-2 hover:bg-primary/90 transition-colors"
                     title={lang === 'ar' ? 'تعديل الصور' : 'Edit Images'}>
                     <Pencil size={16} />
                   </button>
+                  }
                   <button
                     onClick={(e) => {e.stopPropagation();handleDeleteProject(project);}}
                     className="bg-destructive text-white rounded-full p-2 hover:bg-destructive/90 transition-colors"
@@ -226,7 +227,6 @@ export default function Portfolio() {
                     <Trash2 size={16} />
                   </button>
                 </div>
-                }
                   </div>
                 </div>
               </ScrollReveal>
