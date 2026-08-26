@@ -1,4 +1,4 @@
-const CACHE_NAME = 'diamond-union-v2';
+const CACHE_NAME = 'diamond-union-v3';
 
 self.addEventListener('install', () => self.skipWaiting());
 
