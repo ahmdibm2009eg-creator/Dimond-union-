@@ -1,0 +1,1033 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - button [ref=e7] [cursor=pointer]:
+        - img "Diamond Union" [ref=e8]
+      - generic [ref=e9]:
+        - button "EN" [ref=e10] [cursor=pointer]
+        - button [ref=e11] [cursor=pointer]
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e22]:
+        - heading "Diamond Union" [level=1] [ref=e23]
+        - heading "اتحاد الألماس" [level=2] [ref=e25]
+        - paragraph [ref=e26]: حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع
+      - generic [ref=e27]:
+        - button "تواصل معنا" [ref=e28] [cursor=pointer]
+        - button "استكشف أعمالنا" [ref=e29] [cursor=pointer]
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: نبذة عن الشركة
+        - heading "نبذة عن الشركة" [level=2] [ref=e41]
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: تأسست شركة اتحاد الألماس للمقاولات لتقديم حلول احترافية في قطاع المقاولات وتنفيذ المشاريع، مع التركيز على الجودة، والالتزام بالمواعيد، وتحقيق أعلى مستويات رضا العملاء.
+        - paragraph [ref=e44]: تعتمد الشركة على فريق عمل متخصص وشبكة من الموردين والمصانع وورش التصنيع، مما يتيح تنفيذ المشاريع بكفاءة عالية وبتكاليف تنافسية دون التأثير على الجودة.
+        - paragraph [ref=e45]: نسعى إلى بناء شراكات طويلة الأمد مع الجهات الحكومية والقطاع الخاص، والمساهمة في تحقيق مستهدفات رؤية المملكة العربية السعودية 2030 من خلال تقديم خدمات احترافية وحلول مبتكرة.
+      - generic [ref=e46]:
+        - generic [ref=e48]:
+          - heading "رؤيتنا" [level=3] [ref=e54]
+          - paragraph [ref=e55]: أن تكون شركة اتحاد الألماس للمقاولات من الشركات الرائدة في المملكة العربية السعودية في تنفيذ المشاريع والمقاولات والفعاليات، وأن تكون الخيار الأول لعملائنا من خلال الجودة والابتكار.
+        - generic [ref=e57]:
+          - heading "رسالتنا" [level=3] [ref=e64]
+          - paragraph [ref=e65]: تقديم خدمات متكاملة وفق أعلى معايير الجودة والسلامة، مع الالتزام بالمواعيد، وبناء علاقات طويلة الأمد مع العملاء والشركاء.
+      - generic [ref=e66]:
+        - heading "قيمنا" [level=3] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e74]:
+            - heading "الجودة" [level=4] [ref=e79]
+            - paragraph [ref=e80]: نلتزم بأعلى معايير الجودة في كل مشروع
+          - generic [ref=e82]:
+            - heading "المصداقية" [level=4] [ref=e87]
+            - paragraph [ref=e88]: الشفافية والصدق في كل تعاملاتنا
+          - generic [ref=e90]:
+            - heading "الالتزام" [level=4] [ref=e95]
+            - paragraph [ref=e96]: نلتزم بالمواعيد والاتفاقيات
+          - generic [ref=e98]:
+            - heading "الابتكار" [level=4] [ref=e103]
+            - paragraph [ref=e104]: نبحث دائماً عن حلول مبتكرة وفعّالة
+          - generic [ref=e106]:
+            - heading "السلامة" [level=4] [ref=e111]
+            - paragraph [ref=e112]: سلامة فريقنا وعملائنا أولوية قصوى
+          - generic [ref=e114]:
+            - heading "رضا العميل" [level=4] [ref=e119]
+            - paragraph [ref=e120]: نجاحنا يقاس برضا عملائنا
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]: خدماتنا
+        - heading "خدماتنا" [level=2] [ref=e128]
+        - paragraph [ref=e129]: نقدم مجموعة متكاملة من الخدمات الاحترافية لتلبية احتياجاتكم
+      - generic [ref=e130]:
+        - generic [ref=e132]:
+          - heading "تنفيذ أجنحة المعارض والمؤتمرات" [level=3] [ref=e137]
+          - paragraph [ref=e138]: تصميم وتنفيذ أجنحة معارض احترافية تلفت الأنظار وتعكس هوية علامتكم التجارية.
+        - generic [ref=e140]:
+          - heading "تصميم وتنفيذ الديكورات الداخلية" [level=3] [ref=e148]
+          - paragraph [ref=e149]: حلول ديكور داخلية مبتكرة تجمع بين الجمال والوظيفية بأعلى معايير الجودة.
+        - generic [ref=e151]:
+          - heading "التشطيبات التجارية والإدارية" [level=3] [ref=e157]
+          - paragraph [ref=e158]: تشطيبات احترافية للمساحات التجارية والإدارية بمواد عالية الجودة.
+        - generic [ref=e160]:
+          - heading "تجهيز المكاتب والمعارض" [level=3] [ref=e165]
+          - paragraph [ref=e166]: تجهيز كامل للمكاتب والمعارض بأحدث المعدات والتقنيات.
+        - generic [ref=e168]:
+          - heading "أعمال المقاولات العامة" [level=3] [ref=e175]
+          - paragraph [ref=e176]: تنفيذ مشاريع المقاولات العامة بكفاءة عالية والتزام تام بالمواعيد.
+        - generic [ref=e178]:
+          - heading "توريد وتركيب مستلزمات المشاريع" [level=3] [ref=e184]
+          - paragraph [ref=e185]: توريد وتركيب جميع مستلزمات المشاريع بأفضل الأسعار والجودة.
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - generic [ref=e189]: أعمالنا
+          - heading "أعمالنا" [level=2] [ref=e193]
+          - paragraph [ref=e194]: نماذج من مشاريعنا المنجزة بأعلى معايير الجودة والاحترافية
+        - generic [ref=e195]:
+          - button "الكل" [ref=e196] [cursor=pointer]
+          - button "ستاندات" [ref=e197] [cursor=pointer]
+          - button "أجنحة معارض" [ref=e198] [cursor=pointer]
+          - button "تصميم داخلي" [ref=e199] [cursor=pointer]
+          - button "لافتات" [ref=e200] [cursor=pointer]
+          - button "إنهاء التحرير" [ref=e977] [cursor=pointer]
+          - button "مشروع جديد" [ref=e981] [cursor=pointer]
+          - button "تعديل النصوص" [active] [ref=e983] [cursor=pointer]
+          - button "تعديل التصميم" [ref=e986] [cursor=pointer]
+        - generic [ref=e205]:
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - img "ستاند الدواء" [ref=e209]
+              - generic [ref=e211]: ستاندات
+              - generic [ref=e212]: "3"
+            - generic [ref=e225]:
+              - heading "ستاند الدواء" [level=3] [ref=e226]
+              - generic [ref=e993]:
+                - button "تعديل الصور" [ref=e994] [cursor=pointer]
+                - button "حذف المشروع" [ref=e998] [cursor=pointer]
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - img "ستاند نوريفا" [ref=e230]
+              - generic [ref=e232]: ستاندات
+              - generic [ref=e233]: "2"
+            - generic [ref=e246]:
+              - heading "ستاند نوريفا" [level=3] [ref=e247]
+              - generic [ref=e1002]:
+                - button "تعديل الصور" [ref=e1003] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1007] [cursor=pointer]
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - img "ستاند سيتافيل وكومفورت ولورين" [ref=e251]
+              - generic [ref=e253]: ستاندات
+              - generic [ref=e254]: "3"
+            - generic [ref=e267]:
+              - heading "ستاند سيتافيل وكومفورت ولورين" [level=3] [ref=e268]
+              - generic [ref=e1011]:
+                - button "تعديل الصور" [ref=e1012] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1016] [cursor=pointer]
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - img "ستاند خبّة / هايچين" [ref=e272]
+              - generic [ref=e274]: ستاندات
+              - generic [ref=e275]: "2"
+            - generic [ref=e288]:
+              - heading "ستاند خبّة / هايچين" [level=3] [ref=e289]
+              - generic [ref=e1020]:
+                - button "تعديل الصور" [ref=e1021] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1025] [cursor=pointer]
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - img "جناح قنبر ديفيداج وعنصري القابضة" [ref=e293]
+              - generic [ref=e295]: أجنحة معارض
+              - generic [ref=e296]: "2"
+            - generic [ref=e309]:
+              - heading "جناح قنبر ديفيداج وعنصري القابضة" [level=3] [ref=e310]
+              - generic [ref=e1029]:
+                - button "تعديل الصور" [ref=e1030] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1034] [cursor=pointer]
+          - generic [ref=e312]:
+            - generic [ref=e313]:
+              - img "جناح وزارة الشؤون البلدية والقروية" [ref=e314]
+              - generic [ref=e316]: أجنحة معارض
+              - generic [ref=e317]: "2"
+            - generic [ref=e330]:
+              - heading "جناح وزارة الشؤون البلدية والقروية" [level=3] [ref=e331]
+              - generic [ref=e1038]:
+                - button "تعديل الصور" [ref=e1039] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1043] [cursor=pointer]
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - img "جناح شركة وادي الظهران التقني (DTVC)" [ref=e335]
+              - generic [ref=e337]: أجنحة معارض
+              - generic [ref=e338]: "2"
+            - generic [ref=e351]:
+              - heading "جناح شركة وادي الظهران التقني (DTVC)" [level=3] [ref=e352]
+              - generic [ref=e1047]:
+                - button "تعديل الصور" [ref=e1048] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1052] [cursor=pointer]
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - img "جناح نسما وشركاهم" [ref=e356]
+              - generic [ref=e358]: أجنحة معارض
+              - generic [ref=e359]: "2"
+            - generic [ref=e372]:
+              - heading "جناح نسما وشركاهم" [level=3] [ref=e373]
+              - generic [ref=e1056]:
+                - button "تعديل الصور" [ref=e1057] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1061] [cursor=pointer]
+          - generic [ref=e375]:
+            - generic [ref=e376]:
+              - img "جناح سابتكو" [ref=e377]
+              - generic [ref=e379]: أجنحة معارض
+              - generic [ref=e380]: "2"
+            - generic [ref=e393]:
+              - heading "جناح سابتكو" [level=3] [ref=e394]
+              - generic [ref=e1065]:
+                - button "تعديل الصور" [ref=e1066] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1070] [cursor=pointer]
+          - generic [ref=e396]:
+            - generic [ref=e397]:
+              - img "جناح سيرتا" [ref=e398]
+              - generic [ref=e400]: أجنحة معارض
+              - generic [ref=e401]: "2"
+            - generic [ref=e414]:
+              - heading "جناح سيرتا" [level=3] [ref=e415]
+              - generic [ref=e1074]:
+                - button "تعديل الصور" [ref=e1075] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1079] [cursor=pointer]
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - img "جناح الجابري للخدمات اللوجستية" [ref=e419]
+              - generic [ref=e421]: أجنحة معارض
+              - generic [ref=e422]: "2"
+            - generic [ref=e435]:
+              - heading "جناح الجابري للخدمات اللوجستية" [level=3] [ref=e436]
+              - generic [ref=e1083]:
+                - button "تعديل الصور" [ref=e1084] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1088] [cursor=pointer]
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - img "جناح بروكتر آند غامبل (P&G)" [ref=e440]
+              - generic [ref=e442]: أجنحة معارض
+              - generic [ref=e443]: "2"
+            - generic [ref=e456]:
+              - heading "جناح بروكتر آند غامبل (P&G)" [level=3] [ref=e457]
+              - generic [ref=e1092]:
+                - button "تعديل الصور" [ref=e1093] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1097] [cursor=pointer]
+          - generic [ref=e459]:
+            - generic [ref=e460]:
+              - img "جناح البنك السعودي للاستثمار" [ref=e461]
+              - generic [ref=e463]: أجنحة معارض
+              - generic [ref=e464]: "2"
+            - generic [ref=e477]:
+              - heading "جناح البنك السعودي للاستثمار" [level=3] [ref=e478]
+              - generic [ref=e1101]:
+                - button "تعديل الصور" [ref=e1102] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1106] [cursor=pointer]
+          - generic [ref=e480]:
+            - generic [ref=e481]:
+              - img "كشك كريسبي كريم" [ref=e482]
+              - generic [ref=e484]: أجنحة معارض
+              - generic [ref=e485]: "2"
+            - generic [ref=e498]:
+              - heading "كشك كريسبي كريم" [level=3] [ref=e499]
+              - generic [ref=e1110]:
+                - button "تعديل الصور" [ref=e1111] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1115] [cursor=pointer]
+          - generic [ref=e501]:
+            - generic [ref=e502]:
+              - img "كشك سكوب كيوب" [ref=e503]
+              - generic [ref=e505]: أجنحة معارض
+              - generic [ref=e506]: "2"
+            - generic [ref=e519]:
+              - heading "كشك سكوب كيوب" [level=3] [ref=e520]
+              - generic [ref=e1119]:
+                - button "تعديل الصور" [ref=e1120] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1124] [cursor=pointer]
+          - generic [ref=e522]:
+            - generic [ref=e523]:
+              - img "تصميم داخلي لمركز الكسوفي" [ref=e524]
+              - generic [ref=e526]: تصميم داخلي
+              - generic [ref=e527]: "3"
+            - generic [ref=e540]:
+              - heading "تصميم داخلي لمركز الكسوفي" [level=3] [ref=e541]
+              - generic [ref=e1128]:
+                - button "تعديل الصور" [ref=e1129] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1133] [cursor=pointer]
+          - generic [ref=e543]:
+            - generic [ref=e544]:
+              - img "لافتة آيس سويتس وديليسيوس" [ref=e545]
+              - generic [ref=e547]: لافتات
+              - generic [ref=e548]: "2"
+            - generic [ref=e561]:
+              - heading "لافتة آيس سويتس وديليسيوس" [level=3] [ref=e562]
+              - generic [ref=e1137]:
+                - button "تعديل الصور" [ref=e1138] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1142] [cursor=pointer]
+          - generic [ref=e564]:
+            - generic [ref=e565]:
+              - img "لافتة توتليلي" [ref=e566]
+              - generic [ref=e568]: لافتات
+              - generic [ref=e569]: "2"
+            - generic [ref=e582]:
+              - heading "لافتة توتليلي" [level=3] [ref=e583]
+              - generic [ref=e1146]:
+                - button "تعديل الصور" [ref=e1147] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1151] [cursor=pointer]
+      - generic [ref=e1181]:
+        - generic [ref=e1182]:
+          - heading "تعديل نصوص الموقع" [level=3] [ref=e1183]
+          - button [ref=e1184] [cursor=pointer]
+        - textbox "بحث في النصوص..." [ref=e1192]
+        - generic [ref=e1193]:
+          - generic [ref=e1194]:
+            - code [ref=e1196]: nav.home
+            - generic [ref=e1197]:
+              - generic [ref=e1198]:
+                - text: AR
+                - textbox "الرئيسية" [ref=e1199]
+              - generic [ref=e1200]:
+                - text: EN
+                - textbox "nav.home" [ref=e1201]
+          - generic [ref=e1202]:
+            - code [ref=e1204]: nav.about
+            - generic [ref=e1205]:
+              - generic [ref=e1206]:
+                - text: AR
+                - textbox "من نحن" [ref=e1207]
+              - generic [ref=e1208]:
+                - text: EN
+                - textbox "nav.about" [ref=e1209]
+          - generic [ref=e1210]:
+            - code [ref=e1212]: nav.services
+            - generic [ref=e1213]:
+              - generic [ref=e1214]:
+                - text: AR
+                - textbox "خدماتنا" [ref=e1215]
+              - generic [ref=e1216]:
+                - text: EN
+                - textbox "nav.services" [ref=e1217]
+          - generic [ref=e1218]:
+            - code [ref=e1220]: nav.portfolio
+            - generic [ref=e1221]:
+              - generic [ref=e1222]:
+                - text: AR
+                - textbox "أعمالنا" [ref=e1223]
+              - generic [ref=e1224]:
+                - text: EN
+                - textbox "nav.portfolio" [ref=e1225]
+          - generic [ref=e1226]:
+            - code [ref=e1228]: nav.contact
+            - generic [ref=e1229]:
+              - generic [ref=e1230]:
+                - text: AR
+                - textbox "تواصل معنا" [ref=e1231]
+              - generic [ref=e1232]:
+                - text: EN
+                - textbox "nav.contact" [ref=e1233]
+          - generic [ref=e1234]:
+            - code [ref=e1236]: hero.title
+            - generic [ref=e1237]:
+              - generic [ref=e1238]:
+                - text: AR
+                - textbox "شركة اتحاد الألماس للمقاولات" [ref=e1239]
+              - generic [ref=e1240]:
+                - text: EN
+                - textbox "hero.title" [ref=e1241]
+          - generic [ref=e1242]:
+            - code [ref=e1244]: hero.subtitle
+            - generic [ref=e1245]:
+              - generic [ref=e1246]:
+                - text: AR
+                - textbox "حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع" [ref=e1247]
+              - generic [ref=e1248]:
+                - text: EN
+                - textbox "hero.subtitle" [ref=e1249]
+          - generic [ref=e1250]:
+            - code [ref=e1252]: hero.cta
+            - generic [ref=e1253]:
+              - generic [ref=e1254]:
+                - text: AR
+                - textbox "تواصل معنا" [ref=e1255]
+              - generic [ref=e1256]:
+                - text: EN
+                - textbox "hero.cta" [ref=e1257]
+          - generic [ref=e1258]:
+            - code [ref=e1260]: hero.cta2
+            - generic [ref=e1261]:
+              - generic [ref=e1262]:
+                - text: AR
+                - textbox "استكشف أعمالنا" [ref=e1263]
+              - generic [ref=e1264]:
+                - text: EN
+                - textbox "hero.cta2" [ref=e1265]
+          - generic [ref=e1266]:
+            - code [ref=e1268]: hero.stat1
+            - generic [ref=e1269]:
+              - generic [ref=e1270]:
+                - text: AR
+                - textbox "مشروع منجز" [ref=e1271]
+              - generic [ref=e1272]:
+                - text: EN
+                - textbox "hero.stat1" [ref=e1273]
+          - generic [ref=e1274]:
+            - code [ref=e1276]: hero.stat2
+            - generic [ref=e1277]:
+              - generic [ref=e1278]:
+                - text: AR
+                - textbox "عميل" [ref=e1279]
+              - generic [ref=e1280]:
+                - text: EN
+                - textbox "hero.stat2" [ref=e1281]
+          - generic [ref=e1282]:
+            - code [ref=e1284]: hero.stat3
+            - generic [ref=e1285]:
+              - generic [ref=e1286]:
+                - text: AR
+                - textbox "سنوات خبرة" [ref=e1287]
+              - generic [ref=e1288]:
+                - text: EN
+                - textbox "hero.stat3" [ref=e1289]
+          - generic [ref=e1290]:
+            - code [ref=e1292]: about.title
+            - generic [ref=e1293]:
+              - generic [ref=e1294]:
+                - text: AR
+                - textbox "نبذة عن الشركة" [ref=e1295]
+              - generic [ref=e1296]:
+                - text: EN
+                - textbox "about.title" [ref=e1297]
+          - generic [ref=e1298]:
+            - code [ref=e1300]: about.p1
+            - generic [ref=e1301]:
+              - generic [ref=e1302]:
+                - text: AR
+                - textbox "تأسست شركة اتحاد الألماس للمقاولات لتقديم حلول احترافية في قطاع المقاولات وتنفيذ المشاريع، مع التركيز على الجودة، والالتزام بالمواعيد، وتحقيق أعلى مستويات رضا العملاء." [ref=e1303]
+              - generic [ref=e1304]:
+                - text: EN
+                - textbox "about.p1" [ref=e1305]
+          - generic [ref=e1306]:
+            - code [ref=e1308]: about.p2
+            - generic [ref=e1309]:
+              - generic [ref=e1310]:
+                - text: AR
+                - textbox "تعتمد الشركة على فريق عمل متخصص وشبكة من الموردين والمصانع وورش التصنيع، مما يتيح تنفيذ المشاريع بكفاءة عالية وبتكاليف تنافسية دون التأثير على الجودة." [ref=e1311]
+              - generic [ref=e1312]:
+                - text: EN
+                - textbox "about.p2" [ref=e1313]
+          - generic [ref=e1314]:
+            - code [ref=e1316]: about.p3
+            - generic [ref=e1317]:
+              - generic [ref=e1318]:
+                - text: AR
+                - textbox "نسعى إلى بناء شراكات طويلة الأمد مع الجهات الحكومية والقطاع الخاص، والمساهمة في تحقيق مستهدفات رؤية المملكة العربية السعودية 2030 من خلال تقديم خدمات احترافية وحلول مبتكرة." [ref=e1319]
+              - generic [ref=e1320]:
+                - text: EN
+                - textbox "about.p3" [ref=e1321]
+          - generic [ref=e1322]:
+            - code [ref=e1324]: about.visionTitle
+            - generic [ref=e1325]:
+              - generic [ref=e1326]:
+                - text: AR
+                - textbox "رؤيتنا" [ref=e1327]
+              - generic [ref=e1328]:
+                - text: EN
+                - textbox "about.visionTitle" [ref=e1329]
+          - generic [ref=e1330]:
+            - code [ref=e1332]: about.vision
+            - generic [ref=e1333]:
+              - generic [ref=e1334]:
+                - text: AR
+                - textbox "أن تكون شركة اتحاد الألماس للمقاولات من الشركات الرائدة في المملكة العربية السعودية في تنفيذ المشاريع والمقاولات والفعاليات، وأن تكون الخيار الأول لعملائنا من خلال الجودة والابتكار." [ref=e1335]
+              - generic [ref=e1336]:
+                - text: EN
+                - textbox "about.vision" [ref=e1337]
+          - generic [ref=e1338]:
+            - code [ref=e1340]: about.missionTitle
+            - generic [ref=e1341]:
+              - generic [ref=e1342]:
+                - text: AR
+                - textbox "رسالتنا" [ref=e1343]
+              - generic [ref=e1344]:
+                - text: EN
+                - textbox "about.missionTitle" [ref=e1345]
+          - generic [ref=e1346]:
+            - code [ref=e1348]: about.mission
+            - generic [ref=e1349]:
+              - generic [ref=e1350]:
+                - text: AR
+                - textbox "تقديم خدمات متكاملة وفق أعلى معايير الجودة والسلامة، مع الالتزام بالمواعيد، وبناء علاقات طويلة الأمد مع العملاء والشركاء." [ref=e1351]
+              - generic [ref=e1352]:
+                - text: EN
+                - textbox "about.mission" [ref=e1353]
+          - generic [ref=e1354]:
+            - code [ref=e1356]: about.valuesTitle
+            - generic [ref=e1357]:
+              - generic [ref=e1358]:
+                - text: AR
+                - textbox "قيمنا" [ref=e1359]
+              - generic [ref=e1360]:
+                - text: EN
+                - textbox "about.valuesTitle" [ref=e1361]
+          - generic [ref=e1362]:
+            - code [ref=e1364]: about.values.0.title
+            - generic [ref=e1365]:
+              - generic [ref=e1366]:
+                - text: AR
+                - textbox "الجودة" [ref=e1367]
+              - generic [ref=e1368]:
+                - text: EN
+                - textbox "about.values.0.title" [ref=e1369]
+          - generic [ref=e1370]:
+            - code [ref=e1372]: about.values.0.desc
+            - generic [ref=e1373]:
+              - generic [ref=e1374]:
+                - text: AR
+                - textbox "نلتزم بأعلى معايير الجودة في كل مشروع" [ref=e1375]
+              - generic [ref=e1376]:
+                - text: EN
+                - textbox "about.values.0.desc" [ref=e1377]
+          - generic [ref=e1378]:
+            - code [ref=e1380]: about.values.1.title
+            - generic [ref=e1381]:
+              - generic [ref=e1382]:
+                - text: AR
+                - textbox "المصداقية" [ref=e1383]
+              - generic [ref=e1384]:
+                - text: EN
+                - textbox "about.values.1.title" [ref=e1385]
+          - generic [ref=e1386]:
+            - code [ref=e1388]: about.values.1.desc
+            - generic [ref=e1389]:
+              - generic [ref=e1390]:
+                - text: AR
+                - textbox "الشفافية والصدق في كل تعاملاتنا" [ref=e1391]
+              - generic [ref=e1392]:
+                - text: EN
+                - textbox "about.values.1.desc" [ref=e1393]
+          - generic [ref=e1394]:
+            - code [ref=e1396]: about.values.2.title
+            - generic [ref=e1397]:
+              - generic [ref=e1398]:
+                - text: AR
+                - textbox "الالتزام" [ref=e1399]
+              - generic [ref=e1400]:
+                - text: EN
+                - textbox "about.values.2.title" [ref=e1401]
+          - generic [ref=e1402]:
+            - code [ref=e1404]: about.values.2.desc
+            - generic [ref=e1405]:
+              - generic [ref=e1406]:
+                - text: AR
+                - textbox "نلتزم بالمواعيد والاتفاقيات" [ref=e1407]
+              - generic [ref=e1408]:
+                - text: EN
+                - textbox "about.values.2.desc" [ref=e1409]
+          - generic [ref=e1410]:
+            - code [ref=e1412]: about.values.3.title
+            - generic [ref=e1413]:
+              - generic [ref=e1414]:
+                - text: AR
+                - textbox "الابتكار" [ref=e1415]
+              - generic [ref=e1416]:
+                - text: EN
+                - textbox "about.values.3.title" [ref=e1417]
+          - generic [ref=e1418]:
+            - code [ref=e1420]: about.values.3.desc
+            - generic [ref=e1421]:
+              - generic [ref=e1422]:
+                - text: AR
+                - textbox "نبحث دائماً عن حلول مبتكرة وفعّالة" [ref=e1423]
+              - generic [ref=e1424]:
+                - text: EN
+                - textbox "about.values.3.desc" [ref=e1425]
+          - generic [ref=e1426]:
+            - code [ref=e1428]: about.values.4.title
+            - generic [ref=e1429]:
+              - generic [ref=e1430]:
+                - text: AR
+                - textbox "السلامة" [ref=e1431]
+              - generic [ref=e1432]:
+                - text: EN
+                - textbox "about.values.4.title" [ref=e1433]
+          - generic [ref=e1434]:
+            - code [ref=e1436]: about.values.4.desc
+            - generic [ref=e1437]:
+              - generic [ref=e1438]:
+                - text: AR
+                - textbox "سلامة فريقنا وعملائنا أولوية قصوى" [ref=e1439]
+              - generic [ref=e1440]:
+                - text: EN
+                - textbox "about.values.4.desc" [ref=e1441]
+          - generic [ref=e1442]:
+            - code [ref=e1444]: about.values.5.title
+            - generic [ref=e1445]:
+              - generic [ref=e1446]:
+                - text: AR
+                - textbox "رضا العميل" [ref=e1447]
+              - generic [ref=e1448]:
+                - text: EN
+                - textbox "about.values.5.title" [ref=e1449]
+          - generic [ref=e1450]:
+            - code [ref=e1452]: about.values.5.desc
+            - generic [ref=e1453]:
+              - generic [ref=e1454]:
+                - text: AR
+                - textbox "نجاحنا يقاس برضا عملائنا" [ref=e1455]
+              - generic [ref=e1456]:
+                - text: EN
+                - textbox "about.values.5.desc" [ref=e1457]
+          - generic [ref=e1458]:
+            - code [ref=e1460]: services.title
+            - generic [ref=e1461]:
+              - generic [ref=e1462]:
+                - text: AR
+                - textbox "خدماتنا" [ref=e1463]
+              - generic [ref=e1464]:
+                - text: EN
+                - textbox "services.title" [ref=e1465]
+          - generic [ref=e1466]:
+            - code [ref=e1468]: services.subtitle
+            - generic [ref=e1469]:
+              - generic [ref=e1470]:
+                - text: AR
+                - textbox "نقدم مجموعة متكاملة من الخدمات الاحترافية لتلبية احتياجاتكم" [ref=e1471]
+              - generic [ref=e1472]:
+                - text: EN
+                - textbox "services.subtitle" [ref=e1473]
+          - generic [ref=e1474]:
+            - code [ref=e1476]: services.items.0.title
+            - generic [ref=e1477]:
+              - generic [ref=e1478]:
+                - text: AR
+                - textbox "تنفيذ أجنحة المعارض والمؤتمرات" [ref=e1479]
+              - generic [ref=e1480]:
+                - text: EN
+                - textbox "services.items.0.title" [ref=e1481]
+          - generic [ref=e1482]:
+            - code [ref=e1484]: services.items.0.desc
+            - generic [ref=e1485]:
+              - generic [ref=e1486]:
+                - text: AR
+                - textbox "تصميم وتنفيذ أجنحة معارض احترافية تلفت الأنظار وتعكس هوية علامتكم التجارية." [ref=e1487]
+              - generic [ref=e1488]:
+                - text: EN
+                - textbox "services.items.0.desc" [ref=e1489]
+          - generic [ref=e1490]:
+            - code [ref=e1492]: services.items.1.title
+            - generic [ref=e1493]:
+              - generic [ref=e1494]:
+                - text: AR
+                - textbox "تصميم وتنفيذ الديكورات الداخلية" [ref=e1495]
+              - generic [ref=e1496]:
+                - text: EN
+                - textbox "services.items.1.title" [ref=e1497]
+          - generic [ref=e1498]:
+            - code [ref=e1500]: services.items.1.desc
+            - generic [ref=e1501]:
+              - generic [ref=e1502]:
+                - text: AR
+                - textbox "حلول ديكور داخلية مبتكرة تجمع بين الجمال والوظيفية بأعلى معايير الجودة." [ref=e1503]
+              - generic [ref=e1504]:
+                - text: EN
+                - textbox "services.items.1.desc" [ref=e1505]
+          - generic [ref=e1506]:
+            - code [ref=e1508]: services.items.2.title
+            - generic [ref=e1509]:
+              - generic [ref=e1510]:
+                - text: AR
+                - textbox "التشطيبات التجارية والإدارية" [ref=e1511]
+              - generic [ref=e1512]:
+                - text: EN
+                - textbox "services.items.2.title" [ref=e1513]
+          - generic [ref=e1514]:
+            - code [ref=e1516]: services.items.2.desc
+            - generic [ref=e1517]:
+              - generic [ref=e1518]:
+                - text: AR
+                - textbox "تشطيبات احترافية للمساحات التجارية والإدارية بمواد عالية الجودة." [ref=e1519]
+              - generic [ref=e1520]:
+                - text: EN
+                - textbox "services.items.2.desc" [ref=e1521]
+          - generic [ref=e1522]:
+            - code [ref=e1524]: services.items.3.title
+            - generic [ref=e1525]:
+              - generic [ref=e1526]:
+                - text: AR
+                - textbox "تجهيز المكاتب والمعارض" [ref=e1527]
+              - generic [ref=e1528]:
+                - text: EN
+                - textbox "services.items.3.title" [ref=e1529]
+          - generic [ref=e1530]:
+            - code [ref=e1532]: services.items.3.desc
+            - generic [ref=e1533]:
+              - generic [ref=e1534]:
+                - text: AR
+                - textbox "تجهيز كامل للمكاتب والمعارض بأحدث المعدات والتقنيات." [ref=e1535]
+              - generic [ref=e1536]:
+                - text: EN
+                - textbox "services.items.3.desc" [ref=e1537]
+          - generic [ref=e1538]:
+            - code [ref=e1540]: services.items.4.title
+            - generic [ref=e1541]:
+              - generic [ref=e1542]:
+                - text: AR
+                - textbox "أعمال المقاولات العامة" [ref=e1543]
+              - generic [ref=e1544]:
+                - text: EN
+                - textbox "services.items.4.title" [ref=e1545]
+          - generic [ref=e1546]:
+            - code [ref=e1548]: services.items.4.desc
+            - generic [ref=e1549]:
+              - generic [ref=e1550]:
+                - text: AR
+                - textbox "تنفيذ مشاريع المقاولات العامة بكفاءة عالية والتزام تام بالمواعيد." [ref=e1551]
+              - generic [ref=e1552]:
+                - text: EN
+                - textbox "services.items.4.desc" [ref=e1553]
+          - generic [ref=e1554]:
+            - code [ref=e1556]: services.items.5.title
+            - generic [ref=e1557]:
+              - generic [ref=e1558]:
+                - text: AR
+                - textbox "توريد وتركيب مستلزمات المشاريع" [ref=e1559]
+              - generic [ref=e1560]:
+                - text: EN
+                - textbox "services.items.5.title" [ref=e1561]
+          - generic [ref=e1562]:
+            - code [ref=e1564]: services.items.5.desc
+            - generic [ref=e1565]:
+              - generic [ref=e1566]:
+                - text: AR
+                - textbox "توريد وتركيب جميع مستلزمات المشاريع بأفضل الأسعار والجودة." [ref=e1567]
+              - generic [ref=e1568]:
+                - text: EN
+                - textbox "services.items.5.desc" [ref=e1569]
+          - generic [ref=e1570]:
+            - code [ref=e1572]: portfolio.title
+            - generic [ref=e1573]:
+              - generic [ref=e1574]:
+                - text: AR
+                - textbox "أعمالنا" [ref=e1575]
+              - generic [ref=e1576]:
+                - text: EN
+                - textbox "portfolio.title" [ref=e1577]
+          - generic [ref=e1578]:
+            - code [ref=e1580]: portfolio.subtitle
+            - generic [ref=e1581]:
+              - generic [ref=e1582]:
+                - text: AR
+                - textbox "نماذج من مشاريعنا المنجزة بأعلى معايير الجودة والاحترافية" [ref=e1583]
+              - generic [ref=e1584]:
+                - text: EN
+                - textbox "portfolio.subtitle" [ref=e1585]
+          - generic [ref=e1586]:
+            - code [ref=e1588]: portfolio.categories.all
+            - generic [ref=e1589]:
+              - generic [ref=e1590]:
+                - text: AR
+                - textbox "الكل" [ref=e1591]
+              - generic [ref=e1592]:
+                - text: EN
+                - textbox "portfolio.categories.all" [ref=e1593]
+          - generic [ref=e1594]:
+            - code [ref=e1596]: portfolio.categories.stands
+            - generic [ref=e1597]:
+              - generic [ref=e1598]:
+                - text: AR
+                - textbox "ستاندات" [ref=e1599]
+              - generic [ref=e1600]:
+                - text: EN
+                - textbox "portfolio.categories.stands" [ref=e1601]
+          - generic [ref=e1602]:
+            - code [ref=e1604]: portfolio.categories.exhibition
+            - generic [ref=e1605]:
+              - generic [ref=e1606]:
+                - text: AR
+                - textbox "أجنحة معارض" [ref=e1607]
+              - generic [ref=e1608]:
+                - text: EN
+                - textbox "portfolio.categories.exhibition" [ref=e1609]
+          - generic [ref=e1610]:
+            - code [ref=e1612]: portfolio.categories.interior
+            - generic [ref=e1613]:
+              - generic [ref=e1614]:
+                - text: AR
+                - textbox "تصميم داخلي" [ref=e1615]
+              - generic [ref=e1616]:
+                - text: EN
+                - textbox "portfolio.categories.interior" [ref=e1617]
+          - generic [ref=e1618]:
+            - code [ref=e1620]: portfolio.categories.signage
+            - generic [ref=e1621]:
+              - generic [ref=e1622]:
+                - text: AR
+                - textbox "لافتات" [ref=e1623]
+              - generic [ref=e1624]:
+                - text: EN
+                - textbox "portfolio.categories.signage" [ref=e1625]
+          - generic [ref=e1626]:
+            - code [ref=e1628]: contact.title
+            - generic [ref=e1629]:
+              - generic [ref=e1630]:
+                - text: AR
+                - textbox "تواصل معنا" [ref=e1631]
+              - generic [ref=e1632]:
+                - text: EN
+                - textbox "contact.title" [ref=e1633]
+          - generic [ref=e1634]:
+            - code [ref=e1636]: contact.subtitle
+            - generic [ref=e1637]:
+              - generic [ref=e1638]:
+                - text: AR
+                - textbox "نحن هنا للإجابة على استفساراتكم ومناقشة مشاريعكم القادمة" [ref=e1639]
+              - generic [ref=e1640]:
+                - text: EN
+                - textbox "contact.subtitle" [ref=e1641]
+          - generic [ref=e1642]:
+            - code [ref=e1644]: contact.form.name
+            - generic [ref=e1645]:
+              - generic [ref=e1646]:
+                - text: AR
+                - textbox "الاسم الكامل" [ref=e1647]
+              - generic [ref=e1648]:
+                - text: EN
+                - textbox "contact.form.name" [ref=e1649]
+          - generic [ref=e1650]:
+            - code [ref=e1652]: contact.form.namePlaceholder
+            - generic [ref=e1653]:
+              - generic [ref=e1654]:
+                - text: AR
+                - textbox "أدخل اسمك الكامل" [ref=e1655]
+              - generic [ref=e1656]:
+                - text: EN
+                - textbox "contact.form.namePlaceholder" [ref=e1657]
+          - generic [ref=e1658]:
+            - code [ref=e1660]: contact.form.email
+            - generic [ref=e1661]:
+              - generic [ref=e1662]:
+                - text: AR
+                - textbox "البريد الإلكتروني" [ref=e1663]
+              - generic [ref=e1664]:
+                - text: EN
+                - textbox "contact.form.email" [ref=e1665]
+          - generic [ref=e1666]:
+            - code [ref=e1668]: contact.form.emailPlaceholder
+            - generic [ref=e1669]:
+              - generic [ref=e1670]:
+                - text: AR
+                - textbox "example@email.com" [ref=e1671]
+              - generic [ref=e1672]:
+                - text: EN
+                - textbox "contact.form.emailPlaceholder" [ref=e1673]
+          - generic [ref=e1674]:
+            - code [ref=e1676]: contact.form.phone
+            - generic [ref=e1677]:
+              - generic [ref=e1678]:
+                - text: AR
+                - textbox "رقم الهاتف" [ref=e1679]
+              - generic [ref=e1680]:
+                - text: EN
+                - textbox "contact.form.phone" [ref=e1681]
+          - generic [ref=e1682]:
+            - code [ref=e1684]: contact.form.phonePlaceholder
+            - generic [ref=e1685]:
+              - generic [ref=e1686]:
+                - text: AR
+                - textbox "+966 5X XXX XXXX" [ref=e1687]
+              - generic [ref=e1688]:
+                - text: EN
+                - textbox "contact.form.phonePlaceholder" [ref=e1689]
+          - generic [ref=e1690]:
+            - code [ref=e1692]: contact.form.message
+            - generic [ref=e1693]:
+              - generic [ref=e1694]:
+                - text: AR
+                - textbox "رسالتك" [ref=e1695]
+              - generic [ref=e1696]:
+                - text: EN
+                - textbox "contact.form.message" [ref=e1697]
+          - generic [ref=e1698]:
+            - code [ref=e1700]: contact.form.messagePlaceholder
+            - generic [ref=e1701]:
+              - generic [ref=e1702]:
+                - text: AR
+                - textbox "اكتب تفاصيل مشروعك أو استفسارك هنا..." [ref=e1703]
+              - generic [ref=e1704]:
+                - text: EN
+                - textbox "contact.form.messagePlaceholder" [ref=e1705]
+          - generic [ref=e1706]:
+            - code [ref=e1708]: contact.form.submit
+            - generic [ref=e1709]:
+              - generic [ref=e1710]:
+                - text: AR
+                - textbox "إرسال الرسالة" [ref=e1711]
+              - generic [ref=e1712]:
+                - text: EN
+                - textbox "contact.form.submit" [ref=e1713]
+          - generic [ref=e1714]:
+            - code [ref=e1716]: contact.form.success
+            - generic [ref=e1717]:
+              - generic [ref=e1718]:
+                - text: AR
+                - textbox "تم إرسال رسالتك بنجاح! سنتواصل معك في أقرب وقت." [ref=e1719]
+              - generic [ref=e1720]:
+                - text: EN
+                - textbox "contact.form.success" [ref=e1721]
+          - generic [ref=e1722]:
+            - code [ref=e1724]: contact.info.addressLabel
+            - generic [ref=e1725]:
+              - generic [ref=e1726]:
+                - text: AR
+                - textbox "العنوان" [ref=e1727]
+              - generic [ref=e1728]:
+                - text: EN
+                - textbox "contact.info.addressLabel" [ref=e1729]
+          - generic [ref=e1730]:
+            - code [ref=e1732]: contact.info.address
+            - generic [ref=e1733]:
+              - generic [ref=e1734]:
+                - text: AR
+                - textbox "الرياض - الدمام، المملكة العربية السعودية" [ref=e1735]
+              - generic [ref=e1736]:
+                - text: EN
+                - textbox "contact.info.address" [ref=e1737]
+          - generic [ref=e1738]:
+            - code [ref=e1740]: contact.info.phoneLabel
+            - generic [ref=e1741]:
+              - generic [ref=e1742]:
+                - text: AR
+                - textbox "الهاتف" [ref=e1743]
+              - generic [ref=e1744]:
+                - text: EN
+                - textbox "contact.info.phoneLabel" [ref=e1745]
+          - generic [ref=e1746]:
+            - code [ref=e1748]: contact.info.phone
+            - generic [ref=e1749]:
+              - generic [ref=e1750]:
+                - text: AR
+                - textbox "+966 54 988 4339" [ref=e1751]
+              - generic [ref=e1752]:
+                - text: EN
+                - textbox "contact.info.phone" [ref=e1753]
+          - generic [ref=e1754]:
+            - code [ref=e1756]: contact.info.emailLabel
+            - generic [ref=e1757]:
+              - generic [ref=e1758]:
+                - text: AR
+                - textbox "البريد الإلكتروني" [ref=e1759]
+              - generic [ref=e1760]:
+                - text: EN
+                - textbox "contact.info.emailLabel" [ref=e1761]
+          - generic [ref=e1762]:
+            - code [ref=e1764]: contact.info.email
+            - generic [ref=e1765]:
+              - generic [ref=e1766]:
+                - text: AR
+                - textbox "info@diamondunion.sa" [ref=e1767]
+              - generic [ref=e1768]:
+                - text: EN
+                - textbox "contact.info.email" [ref=e1769]
+          - generic [ref=e1770]:
+            - code [ref=e1772]: footer.about
+            - generic [ref=e1773]:
+              - generic [ref=e1774]:
+                - text: AR
+                - textbox "شركة اتحاد الألماس للمقاولات - حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع" [ref=e1775]
+              - generic [ref=e1776]:
+                - text: EN
+                - textbox "footer.about" [ref=e1777]
+          - generic [ref=e1778]:
+            - code [ref=e1780]: footer.quickLinks
+            - generic [ref=e1781]:
+              - generic [ref=e1782]:
+                - text: AR
+                - textbox "روابط سريعة" [ref=e1783]
+              - generic [ref=e1784]:
+                - text: EN
+                - textbox "footer.quickLinks" [ref=e1785]
+          - generic [ref=e1786]:
+            - code [ref=e1788]: footer.contact
+            - generic [ref=e1789]:
+              - generic [ref=e1790]:
+                - text: AR
+                - textbox "تواصل معنا" [ref=e1791]
+              - generic [ref=e1792]:
+                - text: EN
+                - textbox "footer.contact" [ref=e1793]
+          - generic [ref=e1794]:
+            - code [ref=e1796]: footer.rights
+            - generic [ref=e1797]:
+              - generic [ref=e1798]:
+                - text: AR
+                - textbox "جميع الحقوق محفوظة" [ref=e1799]
+              - generic [ref=e1800]:
+                - text: EN
+                - textbox "footer.rights" [ref=e1801]
+          - generic [ref=e1802]:
+            - code [ref=e1804]: footer.company
+            - generic [ref=e1805]:
+              - generic [ref=e1806]:
+                - text: AR
+                - textbox "شركة اتحاد الألماس للمقاولات" [ref=e1807]
+              - generic [ref=e1808]:
+                - text: EN
+                - textbox "footer.company" [ref=e1809]
+    - generic [ref=e585]:
+      - generic [ref=e586]:
+        - generic [ref=e587]: تواصل معنا
+        - heading "تواصل معنا" [level=2] [ref=e591]
+        - paragraph [ref=e592]: نحن هنا للإجابة على استفساراتكم ومناقشة مشاريعكم القادمة
+      - generic [ref=e593]:
+        - generic [ref=e595]:
+          - generic [ref=e602]:
+            - heading "العنوان" [level=3] [ref=e603]
+            - paragraph [ref=e604]: الرياض - الدمام، المملكة العربية السعودية
+          - link [ref=e605] [cursor=pointer]:
+            - /url: https://wa.me/966549884339
+            - generic [ref=e610]:
+              - heading "واتساب" [level=3] [ref=e611]
+              - paragraph [ref=e612]: +966 54 988 4339
+          - link "تواصل معنا مباشرة عبر واتساب" [ref=e613] [cursor=pointer]:
+            - /url: https://wa.me/966549884339
+        - generic [ref=e619]:
+          - generic [ref=e620]:
+            - text: الاسم الكامل
+            - textbox "الاسم الكامل" [ref=e621]:
+              - /placeholder: أدخل اسمك الكامل
+          - generic [ref=e622]:
+            - text: رقم الهاتف
+            - textbox "رقم الهاتف" [ref=e623]:
+              - /placeholder: +966 5X XXX XXXX
+          - generic [ref=e624]:
+            - text: رسالتك
+            - textbox "رسالتك" [ref=e625]:
+              - /placeholder: اكتب تفاصيل مشروعك أو استفسارك هنا...
+          - button "إرسال الرسالة" [ref=e626] [cursor=pointer]
+          - paragraph [ref=e627]: سيتم تحويلك إلى واتساب لإرسال رسالتك مباشرة
+  - contentinfo [ref=e628]:
+    - generic [ref=e629]:
+      - generic [ref=e630]:
+        - paragraph [ref=e632]: شركة اتحاد الألماس للمقاولات - حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع
+        - generic [ref=e633]:
+          - heading "روابط سريعة" [level=3] [ref=e634]
+          - list [ref=e635]:
+            - listitem [ref=e636]:
+              - button "من نحن" [ref=e637] [cursor=pointer]
+            - listitem [ref=e638]:
+              - button "خدماتنا" [ref=e639] [cursor=pointer]
+            - listitem [ref=e640]:
+              - button "أعمالنا" [ref=e641] [cursor=pointer]
+            - listitem [ref=e642]:
+              - button "تواصل معنا" [ref=e643] [cursor=pointer]
+        - generic [ref=e644]:
+          - heading "تواصل معنا" [level=3] [ref=e645]
+          - list [ref=e646]:
+            - listitem [ref=e647]:
+              - generic [ref=e651]: الرياض - الدمام، المملكة العربية السعودية
+            - listitem [ref=e652]:
+              - generic [ref=e655]: +966 54 988 4339
+            - listitem [ref=e656]:
+              - generic [ref=e660]: info@diamondunion.sa
+      - paragraph [ref=e662]: © 2026 شركة اتحاد الألماس للمقاولات. جميع الحقوق محفوظة.
+  - link "WhatsApp" [ref=e663] [cursor=pointer]:
+    - /url: https://wa.me/966549884339
+    - generic [ref=e666]: تواصل عبر واتساب

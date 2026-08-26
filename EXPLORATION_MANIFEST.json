@@ -1,0 +1,103 @@
+{
+  "project": {
+    "name": "Diamond Union",
+    "type": "Corporate Website with Admin CMS",
+    "platform": "Base44",
+    "framework": "React 18 + Vite 6",
+    "language": "JavaScript (JSX)",
+    "styling": "Tailwind CSS 3 + Radix UI",
+    "defaultLocale": "ar",
+    "supportedLocales": ["ar", "en"]
+  },
+  "entryPoints": {
+    "html": "index.html",
+    "js": "src/main.jsx",
+    "app": "src/App.jsx",
+    "page": "src/pages/Home.jsx"
+  },
+  "entities": [
+    {
+      "name": "Project",
+      "schema": "base44/entities/Project.jsonc",
+      "fields": ["name_ar", "name_en", "category", "images", "order"]
+    },
+    {
+      "name": "SiteContent",
+      "schema": "base44/entities/SiteContent.jsonc",
+      "fields": ["content_key", "value_ar", "value_en"]
+    },
+    {
+      "name": "User",
+      "schema": "base44/entities/User.jsonc",
+      "fields": ["role"]
+    }
+  ],
+  "commands": {
+    "setup": ["npm install", "npm install -g base44@latest"],
+    "dev": ["base44 dev", "npm run dev"],
+    "build": ["npm run build"],
+    "quality": ["npm run lint", "npm run lint:fix", "npm run typecheck"],
+    "base44": ["base44 dashboard open"]
+  },
+  "criticalFiles": [
+    "src/App.jsx",
+    "src/lib/AuthContext.jsx",
+    "src/lib/LanguageContext.jsx",
+    "src/lib/ThemeContext.jsx",
+    "src/lib/translations.js",
+    "src/components/sections/Portfolio.jsx",
+    "src/api/base44Client.js",
+    "src/lib/app-params.js",
+    "src/lib/contentUtils.js"
+  ],
+  "risks": [
+    {
+      "severity": "high",
+      "title": "Hardcoded admin password",
+      "file": "src/components/sections/Portfolio.jsx",
+      "line": 64,
+      "description": "Admin CMS password '1516' is hardcoded in client-side JavaScript"
+    },
+    {
+      "severity": "medium",
+      "title": "No error boundaries",
+      "description": "No React error boundaries found; crashes propagate to root"
+    },
+    {
+      "severity": "medium",
+      "title": "Unused dependencies",
+      "description": "Stripe, Leaflet, Recharts, jsPDF, react-quill, html2canvas installed but not imported"
+    },
+    {
+      "severity": "low",
+      "title": "No tests",
+      "description": "No test files or test configuration found"
+    }
+  ],
+  "unknowns": [
+    {
+      "question": "Are auth pages meant to be active?",
+      "impact": "Routes may need to be added",
+      "evidence": "Pages exist but not routed in App.jsx"
+    },
+    {
+      "question": "What happened to the original Base44 app?",
+      "impact": "Features may have been lost in force-push",
+      "evidence": "git reset required, Arabic commit history suggests prior development"
+    },
+    {
+      "question": "Is dark mode fully implemented?",
+      "impact": "CSS exists but no UI toggle",
+      "evidence": ".dark class defined in index.css, darkMode enabled in tailwind.config"
+    }
+  ],
+  "confidence": {
+    "architecture": 95,
+    "dataFlow": 90,
+    "authFlow": 85,
+    "deployment": 70,
+    "testing": 90
+  },
+  "generatedAt": "2026-08-24",
+  "explorationVersion": "1.0"
+}

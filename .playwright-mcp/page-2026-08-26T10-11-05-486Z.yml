@@ -1,0 +1,208 @@
+- generic [ref=e7]:
+  - banner [ref=e8]:
+    - generic [ref=e10]:
+      - button [ref=e11] [cursor=pointer]:
+        - img "Diamond Union" [ref=e12]
+      - generic [ref=e13]:
+        - button "EN" [ref=e14] [cursor=pointer]
+        - button [ref=e15] [cursor=pointer]
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e26]:
+        - heading "Diamond Union" [level=1] [ref=e27]
+        - heading "اتحاد الألماس" [level=2] [ref=e29]
+        - paragraph [ref=e30]: حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع
+      - generic [ref=e31]:
+        - button "تواصل معنا" [ref=e32] [cursor=pointer]
+        - button "استكشف أعمالنا" [ref=e33] [cursor=pointer]
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]: نبذة عن الشركة
+        - heading "نبذة عن الشركة" [level=2] [ref=e45]
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: تأسست شركة اتحاد الألماس للمقاولات لتقديم حلول احترافية في قطاع المقاولات وتنفيذ المشاريع، مع التركيز على الجودة، والالتزام بالمواعيد، وتحقيق أعلى مستويات رضا العملاء.
+        - paragraph [ref=e48]: تعتمد الشركة على فريق عمل متخصص وشبكة من الموردين والمصانع وورش التصنيع، مما يتيح تنفيذ المشاريع بكفاءة عالية وبتكاليف تنافسية دون التأثير على الجودة.
+        - paragraph [ref=e49]: نسعى إلى بناء شراكات طويلة الأمد مع الجهات الحكومية والقطاع الخاص، والمساهمة في تحقيق مستهدفات رؤية المملكة العربية السعودية 2030 من خلال تقديم خدمات احترافية وحلول مبتكرة.
+      - generic [ref=e50]:
+        - generic [ref=e52]:
+          - heading "رؤيتنا" [level=3] [ref=e58]
+          - paragraph [ref=e59]: أن تكون شركة اتحاد الألماس للمقاولات من الشركات الرائدة في المملكة العربية السعودية في تنفيذ المشاريع والمقاولات والفعاليات، وأن تكون الخيار الأول لعملائنا من خلال الجودة والابتكار.
+        - generic [ref=e61]:
+          - heading "رسالتنا" [level=3] [ref=e68]
+          - paragraph [ref=e69]: تقديم خدمات متكاملة وفق أعلى معايير الجودة والسلامة، مع الالتزام بالمواعيد، وبناء علاقات طويلة الأمد مع العملاء والشركاء.
+      - generic [ref=e70]:
+        - heading "قيمنا" [level=3] [ref=e75]
+        - generic [ref=e76]:
+          - generic [ref=e78]:
+            - heading "الجودة" [level=4] [ref=e83]
+            - paragraph [ref=e84]: نلتزم بأعلى معايير الجودة في كل مشروع
+          - generic [ref=e86]:
+            - heading "المصداقية" [level=4] [ref=e91]
+            - paragraph [ref=e92]: الشفافية والصدق في كل تعاملاتنا
+          - generic [ref=e94]:
+            - heading "الالتزام" [level=4] [ref=e99]
+            - paragraph [ref=e100]: نلتزم بالمواعيد والاتفاقيات
+          - generic [ref=e102]:
+            - heading "الابتكار" [level=4] [ref=e107]
+            - paragraph [ref=e108]: نبحث دائماً عن حلول مبتكرة وفعّالة
+          - generic [ref=e110]:
+            - heading "السلامة" [level=4] [ref=e115]
+            - paragraph [ref=e116]: سلامة فريقنا وعملائنا أولوية قصوى
+          - generic [ref=e118]:
+            - heading "رضا العميل" [level=4] [ref=e123]
+            - paragraph [ref=e124]: نجاحنا يقاس برضا عملائنا
+    - generic [ref=e126]:
+      - generic [ref=e127]:
+        - generic [ref=e128]: خدماتنا
+        - heading "خدماتنا" [level=2] [ref=e132]
+        - paragraph [ref=e133]: نقدم مجموعة متكاملة من الخدمات الاحترافية لتلبية احتياجاتكم
+      - generic [ref=e134]:
+        - generic [ref=e136]:
+          - heading "تنفيذ أجنحة المعارض والمؤتمرات" [level=3] [ref=e141]
+          - paragraph [ref=e142]: تصميم وتنفيذ أجنحة معارض احترافية تلفت الأنظار وتعكس هوية علامتكم التجارية.
+        - generic [ref=e144]:
+          - heading "تصميم وتنفيذ الديكورات الداخلية" [level=3] [ref=e152]
+          - paragraph [ref=e153]: حلول ديكور داخلية مبتكرة تجمع بين الجمال والوظيفية بأعلى معايير الجودة.
+        - generic [ref=e155]:
+          - heading "التشطيبات التجارية والإدارية" [level=3] [ref=e161]
+          - paragraph [ref=e162]: تشطيبات احترافية للمساحات التجارية والإدارية بمواد عالية الجودة.
+        - generic [ref=e164]:
+          - heading "تجهيز المكاتب والمعارض" [level=3] [ref=e169]
+          - paragraph [ref=e170]: تجهيز كامل للمكاتب والمعارض بأحدث المعدات والتقنيات.
+        - generic [ref=e172]:
+          - heading "أعمال المقاولات العامة" [level=3] [ref=e179]
+          - paragraph [ref=e180]: تنفيذ مشاريع المقاولات العامة بكفاءة عالية والتزام تام بالمواعيد.
+        - generic [ref=e182]:
+          - heading "توريد وتركيب مستلزمات المشاريع" [level=3] [ref=e188]
+          - paragraph [ref=e189]: توريد وتركيب جميع مستلزمات المشاريع بأفضل الأسعار والجودة.
+    - generic [ref=e190]:
+      - generic [ref=e191]:
+        - generic [ref=e192]:
+          - generic [ref=e193]: أعمالنا
+          - heading "أعمالنا" [level=2] [ref=e197]
+          - paragraph [ref=e198]: نماذج من مشاريعنا المنجزة بأعلى معايير الجودة والاحترافية
+        - generic [ref=e199]:
+          - button "الكل" [ref=e200] [cursor=pointer]
+          - button "ستاندات" [ref=e201] [cursor=pointer]
+          - button "أجنحة معارض" [ref=e202] [cursor=pointer]
+          - button "تصميم داخلي" [ref=e203] [cursor=pointer]
+          - button "لافتات" [ref=e204] [cursor=pointer]
+          - button "إنهاء التحرير" [ref=e370] [cursor=pointer]
+          - button "مشروع جديد" [active] [ref=e374] [cursor=pointer]
+          - button "تعديل النصوص" [ref=e376] [cursor=pointer]
+          - button "تعديل التصميم" [ref=e379] [cursor=pointer]
+          - button "تصدير" [ref=e386] [cursor=pointer]
+          - generic [ref=e390] [cursor=pointer]: استيراد
+        - generic [ref=e209]:
+          - generic [ref=e211]:
+            - generic [ref=e212]:
+              - img "جناح معرض رياضة" [ref=e213]
+              - generic [ref=e215]: أجنحة معارض
+              - generic [ref=e216]: "3"
+            - generic [ref=e229]:
+              - heading "جناح معرض رياضة" [level=3] [ref=e230]
+              - generic [ref=e394]:
+                - button "تعديل الصور" [ref=e395] [cursor=pointer]
+                - button "حذف المشروع" [ref=e399] [cursor=pointer]
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - img "تصميم داخلي لمكتب" [ref=e234]
+              - generic [ref=e236]: تصميم داخلي
+              - generic [ref=e237]: "3"
+            - generic [ref=e250]:
+              - heading "تصميم داخلي لمكتب" [level=3] [ref=e251]
+              - generic [ref=e403]:
+                - button "تعديل الصور" [ref=e404] [cursor=pointer]
+                - button "حذف المشروع" [ref=e408] [cursor=pointer]
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - img "لافتة خارجية" [ref=e255]
+              - generic [ref=e257]: لافتات
+              - generic [ref=e258]: "3"
+            - generic [ref=e271]:
+              - heading "لافتة خارجية" [level=3] [ref=e272]
+              - generic [ref=e412]:
+                - button "تعديل الصور" [ref=e413] [cursor=pointer]
+                - button "حذف المشروع" [ref=e417] [cursor=pointer]
+      - generic [ref=e422]:
+        - generic [ref=e423]:
+          - heading "إضافة مشروع جديد" [level=3] [ref=e424]
+          - button [ref=e426] [cursor=pointer]
+        - generic [ref=e430]:
+          - generic [ref=e431]:
+            - generic [ref=e432]: اسم المشروع (عربي) *
+            - textbox "أدخل اسم المشروع بالعربية" [ref=e433]
+          - generic [ref=e434]:
+            - text: اسم المشروع (إنجليزي)
+            - textbox "Enter project name in English" [ref=e435]
+          - generic [ref=e436]:
+            - text: التصنيف
+            - combobox [ref=e437]:
+              - option "ستاندات" [selected]
+              - option "أجنحة معارض"
+              - option "تصميم داخلي"
+              - option "لافتات"
+          - generic [ref=e438]:
+            - text: صور المشروع
+            - generic [ref=e439] [cursor=pointer]: اضغط لرفع الصور
+          - button "إضافة المشروع" [disabled] [ref=e444]
+    - generic [ref=e274]:
+      - generic [ref=e275]:
+        - generic [ref=e276]: تواصل معنا
+        - heading "تواصل معنا" [level=2] [ref=e280]
+        - paragraph [ref=e281]: نحن هنا للإجابة على استفساراتكم ومناقشة مشاريعكم القادمة
+      - generic [ref=e282]:
+        - generic [ref=e284]:
+          - generic [ref=e291]:
+            - heading "العنوان" [level=3] [ref=e292]
+            - paragraph [ref=e293]: الرياض - الدمام، المملكة العربية السعودية
+          - link [ref=e294] [cursor=pointer]:
+            - /url: https://wa.me/966549884339
+            - generic [ref=e299]:
+              - heading "واتساب" [level=3] [ref=e300]
+              - paragraph [ref=e301]: +966 54 988 4339
+          - link "تواصل معنا مباشرة عبر واتساب" [ref=e302] [cursor=pointer]:
+            - /url: https://wa.me/966549884339
+        - generic [ref=e308]:
+          - generic [ref=e309]:
+            - text: الاسم الكامل
+            - textbox "الاسم الكامل" [ref=e310]:
+              - /placeholder: أدخل اسمك الكامل
+          - generic [ref=e311]:
+            - text: رقم الهاتف
+            - textbox "رقم الهاتف" [ref=e312]:
+              - /placeholder: +966 5X XXX XXXX
+          - generic [ref=e313]:
+            - text: رسالتك
+            - textbox "رسالتك" [ref=e314]:
+              - /placeholder: اكتب تفاصيل مشروعك أو استفسارك هنا...
+          - button "إرسال الرسالة" [ref=e315] [cursor=pointer]
+          - paragraph [ref=e316]: سيتم تحويلك إلى واتساب لإرسال رسالتك مباشرة
+  - contentinfo [ref=e317]:
+    - generic [ref=e318]:
+      - generic [ref=e319]:
+        - paragraph [ref=e321]: شركة اتحاد الألماس للمقاولات - حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع
+        - generic [ref=e322]:
+          - heading "روابط سريعة" [level=3] [ref=e323]
+          - list [ref=e324]:
+            - listitem [ref=e325]:
+              - button "من نحن" [ref=e326] [cursor=pointer]
+            - listitem [ref=e327]:
+              - button "خدماتنا" [ref=e328] [cursor=pointer]
+            - listitem [ref=e329]:
+              - button "أعمالنا" [ref=e330] [cursor=pointer]
+            - listitem [ref=e331]:
+              - button "تواصل معنا" [ref=e332] [cursor=pointer]
+        - generic [ref=e333]:
+          - heading "تواصل معنا" [level=3] [ref=e334]
+          - list [ref=e335]:
+            - listitem [ref=e336]:
+              - generic [ref=e340]: الرياض - الدمام، المملكة العربية السعودية
+            - listitem [ref=e341]:
+              - generic [ref=e344]: +966 54 988 4339
+            - listitem [ref=e345]:
+              - generic [ref=e349]: info@diamondunion.sa
+      - paragraph [ref=e351]: © 2026 شركة اتحاد الألماس للمقاولات. جميع الحقوق محفوظة.
+  - link "WhatsApp" [ref=e352] [cursor=pointer]:
+    - /url: https://wa.me/966549884339
+    - generic [ref=e355]: تواصل عبر واتساب

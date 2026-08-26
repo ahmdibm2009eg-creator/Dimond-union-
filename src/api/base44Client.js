@@ -124,13 +124,6 @@ seedIfNeeded();
 // ── File upload ──────────────────────────────────────────────────────
 const BUCKET = 'project-images';
 
-async function ensureBucket() {
-  const { error } = await supabase.storage.getBucket(BUCKET);
-  if (error) {
-    await supabase.storage.createBucket(BUCKET, { public: true });
-  }
-}
-
 // ── Exported API ─────────────────────────────────────────────────────
 export const base44 = {
   entities: {
@@ -140,7 +133,6 @@ export const base44 = {
   integrations: {
     Core: {
       UploadFile: async ({ file }) => {
-        await ensureBucket();
         const ext = file.name.split('.').pop() || 'bin';
         const path = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`;
         const { error } = await supabase.storage.from(BUCKET).upload(path, file, {

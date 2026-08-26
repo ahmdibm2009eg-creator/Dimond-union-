@@ -1,0 +1,356 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - button [ref=e7] [cursor=pointer]:
+        - img "Diamond Union" [ref=e8]
+      - generic [ref=e9]:
+        - button "EN" [ref=e10] [cursor=pointer]
+        - button [ref=e11] [cursor=pointer]
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e22]:
+        - heading "Diamond Union" [level=1] [ref=e23]
+        - heading "اتحاد الألماس" [level=2] [ref=e25]
+        - paragraph [ref=e26]: حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع
+      - generic [ref=e27]:
+        - button "تواصل معنا" [ref=e28] [cursor=pointer]
+        - button "استكشف أعمالنا" [ref=e29] [cursor=pointer]
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]: نبذة عن الشركة
+        - heading "نبذة عن الشركة" [level=2] [ref=e41]
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: تأسست شركة اتحاد الألماس للمقاولات لتقديم حلول احترافية في قطاع المقاولات وتنفيذ المشاريع، مع التركيز على الجودة، والالتزام بالمواعيد، وتحقيق أعلى مستويات رضا العملاء.
+        - paragraph [ref=e44]: تعتمد الشركة على فريق عمل متخصص وشبكة من الموردين والمصانع وورش التصنيع، مما يتيح تنفيذ المشاريع بكفاءة عالية وبتكاليف تنافسية دون التأثير على الجودة.
+        - paragraph [ref=e45]: نسعى إلى بناء شراكات طويلة الأمد مع الجهات الحكومية والقطاع الخاص، والمساهمة في تحقيق مستهدفات رؤية المملكة العربية السعودية 2030 من خلال تقديم خدمات احترافية وحلول مبتكرة.
+      - generic [ref=e46]:
+        - generic [ref=e48]:
+          - heading "رؤيتنا" [level=3] [ref=e54]
+          - paragraph [ref=e55]: أن تكون شركة اتحاد الألماس للمقاولات من الشركات الرائدة في المملكة العربية السعودية في تنفيذ المشاريع والمقاولات والفعاليات، وأن تكون الخيار الأول لعملائنا من خلال الجودة والابتكار.
+        - generic [ref=e57]:
+          - heading "رسالتنا" [level=3] [ref=e64]
+          - paragraph [ref=e65]: تقديم خدمات متكاملة وفق أعلى معايير الجودة والسلامة، مع الالتزام بالمواعيد، وبناء علاقات طويلة الأمد مع العملاء والشركاء.
+      - generic [ref=e66]:
+        - heading "قيمنا" [level=3] [ref=e71]
+        - generic [ref=e72]:
+          - generic [ref=e74]:
+            - heading "الجودة" [level=4] [ref=e79]
+            - paragraph [ref=e80]: نلتزم بأعلى معايير الجودة في كل مشروع
+          - generic [ref=e82]:
+            - heading "المصداقية" [level=4] [ref=e87]
+            - paragraph [ref=e88]: الشفافية والصدق في كل تعاملاتنا
+          - generic [ref=e90]:
+            - heading "الالتزام" [level=4] [ref=e95]
+            - paragraph [ref=e96]: نلتزم بالمواعيد والاتفاقيات
+          - generic [ref=e98]:
+            - heading "الابتكار" [level=4] [ref=e103]
+            - paragraph [ref=e104]: نبحث دائماً عن حلول مبتكرة وفعّالة
+          - generic [ref=e106]:
+            - heading "السلامة" [level=4] [ref=e111]
+            - paragraph [ref=e112]: سلامة فريقنا وعملائنا أولوية قصوى
+          - generic [ref=e114]:
+            - heading "رضا العميل" [level=4] [ref=e119]
+            - paragraph [ref=e120]: نجاحنا يقاس برضا عملائنا
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]: خدماتنا
+        - heading "خدماتنا" [level=2] [ref=e128]
+        - paragraph [ref=e129]: نقدم مجموعة متكاملة من الخدمات الاحترافية لتلبية احتياجاتكم
+      - generic [ref=e130]:
+        - generic [ref=e132]:
+          - heading "تنفيذ أجنحة المعارض والمؤتمرات" [level=3] [ref=e137]
+          - paragraph [ref=e138]: تصميم وتنفيذ أجنحة معارض احترافية تلفت الأنظار وتعكس هوية علامتكم التجارية.
+        - generic [ref=e140]:
+          - heading "تصميم وتنفيذ الديكورات الداخلية" [level=3] [ref=e148]
+          - paragraph [ref=e149]: حلول ديكور داخلية مبتكرة تجمع بين الجمال والوظيفية بأعلى معايير الجودة.
+        - generic [ref=e151]:
+          - heading "التشطيبات التجارية والإدارية" [level=3] [ref=e157]
+          - paragraph [ref=e158]: تشطيبات احترافية للمساحات التجارية والإدارية بمواد عالية الجودة.
+        - generic [ref=e160]:
+          - heading "تجهيز المكاتب والمعارض" [level=3] [ref=e165]
+          - paragraph [ref=e166]: تجهيز كامل للمكاتب والمعارض بأحدث المعدات والتقنيات.
+        - generic [ref=e168]:
+          - heading "أعمال المقاولات العامة" [level=3] [ref=e175]
+          - paragraph [ref=e176]: تنفيذ مشاريع المقاولات العامة بكفاءة عالية والتزام تام بالمواعيد.
+        - generic [ref=e178]:
+          - heading "توريد وتركيب مستلزمات المشاريع" [level=3] [ref=e184]
+          - paragraph [ref=e185]: توريد وتركيب جميع مستلزمات المشاريع بأفضل الأسعار والجودة.
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - generic [ref=e188]:
+          - generic [ref=e189]: أعمالنا
+          - heading "أعمالنا" [level=2] [ref=e193]
+          - paragraph [ref=e194]: نماذج من مشاريعنا المنجزة بأعلى معايير الجودة والاحترافية
+        - generic [ref=e195]:
+          - button "الكل" [ref=e196] [cursor=pointer]
+          - button "ستاندات" [ref=e197] [cursor=pointer]
+          - button "أجنحة معارض" [ref=e198] [cursor=pointer]
+          - button "تصميم داخلي" [ref=e199] [cursor=pointer]
+          - button "لافتات" [ref=e200] [cursor=pointer]
+          - button "إنهاء التحرير" [ref=e977] [cursor=pointer]
+          - button "مشروع جديد" [active] [ref=e981] [cursor=pointer]
+          - button "تعديل النصوص" [ref=e983] [cursor=pointer]
+          - button "تعديل التصميم" [ref=e986] [cursor=pointer]
+        - generic [ref=e205]:
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - img "ستاند الدواء" [ref=e209]
+              - generic [ref=e211]: ستاندات
+              - generic [ref=e212]: "3"
+            - generic [ref=e225]:
+              - heading "ستاند الدواء" [level=3] [ref=e226]
+              - generic [ref=e993]:
+                - button "تعديل الصور" [ref=e994] [cursor=pointer]
+                - button "حذف المشروع" [ref=e998] [cursor=pointer]
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - img "ستاند نوريفا" [ref=e230]
+              - generic [ref=e232]: ستاندات
+              - generic [ref=e233]: "2"
+            - generic [ref=e246]:
+              - heading "ستاند نوريفا" [level=3] [ref=e247]
+              - generic [ref=e1002]:
+                - button "تعديل الصور" [ref=e1003] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1007] [cursor=pointer]
+          - generic [ref=e249]:
+            - generic [ref=e250]:
+              - img "ستاند سيتافيل وكومفورت ولورين" [ref=e251]
+              - generic [ref=e253]: ستاندات
+              - generic [ref=e254]: "3"
+            - generic [ref=e267]:
+              - heading "ستاند سيتافيل وكومفورت ولورين" [level=3] [ref=e268]
+              - generic [ref=e1011]:
+                - button "تعديل الصور" [ref=e1012] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1016] [cursor=pointer]
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - img "ستاند خبّة / هايچين" [ref=e272]
+              - generic [ref=e274]: ستاندات
+              - generic [ref=e275]: "2"
+            - generic [ref=e288]:
+              - heading "ستاند خبّة / هايچين" [level=3] [ref=e289]
+              - generic [ref=e1020]:
+                - button "تعديل الصور" [ref=e1021] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1025] [cursor=pointer]
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - img "جناح قنبر ديفيداج وعنصري القابضة" [ref=e293]
+              - generic [ref=e295]: أجنحة معارض
+              - generic [ref=e296]: "2"
+            - generic [ref=e309]:
+              - heading "جناح قنبر ديفيداج وعنصري القابضة" [level=3] [ref=e310]
+              - generic [ref=e1029]:
+                - button "تعديل الصور" [ref=e1030] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1034] [cursor=pointer]
+          - generic [ref=e312]:
+            - generic [ref=e313]:
+              - img "جناح وزارة الشؤون البلدية والقروية" [ref=e314]
+              - generic [ref=e316]: أجنحة معارض
+              - generic [ref=e317]: "2"
+            - generic [ref=e330]:
+              - heading "جناح وزارة الشؤون البلدية والقروية" [level=3] [ref=e331]
+              - generic [ref=e1038]:
+                - button "تعديل الصور" [ref=e1039] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1043] [cursor=pointer]
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - img "جناح شركة وادي الظهران التقني (DTVC)" [ref=e335]
+              - generic [ref=e337]: أجنحة معارض
+              - generic [ref=e338]: "2"
+            - generic [ref=e351]:
+              - heading "جناح شركة وادي الظهران التقني (DTVC)" [level=3] [ref=e352]
+              - generic [ref=e1047]:
+                - button "تعديل الصور" [ref=e1048] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1052] [cursor=pointer]
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - img "جناح نسما وشركاهم" [ref=e356]
+              - generic [ref=e358]: أجنحة معارض
+              - generic [ref=e359]: "2"
+            - generic [ref=e372]:
+              - heading "جناح نسما وشركاهم" [level=3] [ref=e373]
+              - generic [ref=e1056]:
+                - button "تعديل الصور" [ref=e1057] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1061] [cursor=pointer]
+          - generic [ref=e375]:
+            - generic [ref=e376]:
+              - img "جناح سابتكو" [ref=e377]
+              - generic [ref=e379]: أجنحة معارض
+              - generic [ref=e380]: "2"
+            - generic [ref=e393]:
+              - heading "جناح سابتكو" [level=3] [ref=e394]
+              - generic [ref=e1065]:
+                - button "تعديل الصور" [ref=e1066] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1070] [cursor=pointer]
+          - generic [ref=e396]:
+            - generic [ref=e397]:
+              - img "جناح سيرتا" [ref=e398]
+              - generic [ref=e400]: أجنحة معارض
+              - generic [ref=e401]: "2"
+            - generic [ref=e414]:
+              - heading "جناح سيرتا" [level=3] [ref=e415]
+              - generic [ref=e1074]:
+                - button "تعديل الصور" [ref=e1075] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1079] [cursor=pointer]
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - img "جناح الجابري للخدمات اللوجستية" [ref=e419]
+              - generic [ref=e421]: أجنحة معارض
+              - generic [ref=e422]: "2"
+            - generic [ref=e435]:
+              - heading "جناح الجابري للخدمات اللوجستية" [level=3] [ref=e436]
+              - generic [ref=e1083]:
+                - button "تعديل الصور" [ref=e1084] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1088] [cursor=pointer]
+          - generic [ref=e438]:
+            - generic [ref=e439]:
+              - img "جناح بروكتر آند غامبل (P&G)" [ref=e440]
+              - generic [ref=e442]: أجنحة معارض
+              - generic [ref=e443]: "2"
+            - generic [ref=e456]:
+              - heading "جناح بروكتر آند غامبل (P&G)" [level=3] [ref=e457]
+              - generic [ref=e1092]:
+                - button "تعديل الصور" [ref=e1093] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1097] [cursor=pointer]
+          - generic [ref=e459]:
+            - generic [ref=e460]:
+              - img "جناح البنك السعودي للاستثمار" [ref=e461]
+              - generic [ref=e463]: أجنحة معارض
+              - generic [ref=e464]: "2"
+            - generic [ref=e477]:
+              - heading "جناح البنك السعودي للاستثمار" [level=3] [ref=e478]
+              - generic [ref=e1101]:
+                - button "تعديل الصور" [ref=e1102] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1106] [cursor=pointer]
+          - generic [ref=e480]:
+            - generic [ref=e481]:
+              - img "كشك كريسبي كريم" [ref=e482]
+              - generic [ref=e484]: أجنحة معارض
+              - generic [ref=e485]: "2"
+            - generic [ref=e498]:
+              - heading "كشك كريسبي كريم" [level=3] [ref=e499]
+              - generic [ref=e1110]:
+                - button "تعديل الصور" [ref=e1111] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1115] [cursor=pointer]
+          - generic [ref=e501]:
+            - generic [ref=e502]:
+              - img "كشك سكوب كيوب" [ref=e503]
+              - generic [ref=e505]: أجنحة معارض
+              - generic [ref=e506]: "2"
+            - generic [ref=e519]:
+              - heading "كشك سكوب كيوب" [level=3] [ref=e520]
+              - generic [ref=e1119]:
+                - button "تعديل الصور" [ref=e1120] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1124] [cursor=pointer]
+          - generic [ref=e522]:
+            - generic [ref=e523]:
+              - img "تصميم داخلي لمركز الكسوفي" [ref=e524]
+              - generic [ref=e526]: تصميم داخلي
+              - generic [ref=e527]: "3"
+            - generic [ref=e540]:
+              - heading "تصميم داخلي لمركز الكسوفي" [level=3] [ref=e541]
+              - generic [ref=e1128]:
+                - button "تعديل الصور" [ref=e1129] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1133] [cursor=pointer]
+          - generic [ref=e543]:
+            - generic [ref=e544]:
+              - img "لافتة آيس سويتس وديليسيوس" [ref=e545]
+              - generic [ref=e547]: لافتات
+              - generic [ref=e548]: "2"
+            - generic [ref=e561]:
+              - heading "لافتة آيس سويتس وديليسيوس" [level=3] [ref=e562]
+              - generic [ref=e1137]:
+                - button "تعديل الصور" [ref=e1138] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1142] [cursor=pointer]
+          - generic [ref=e564]:
+            - generic [ref=e565]:
+              - img "لافتة توتليلي" [ref=e566]
+              - generic [ref=e568]: لافتات
+              - generic [ref=e569]: "2"
+            - generic [ref=e582]:
+              - heading "لافتة توتليلي" [level=3] [ref=e583]
+              - generic [ref=e1146]:
+                - button "تعديل الصور" [ref=e1147] [cursor=pointer]
+                - button "حذف المشروع" [ref=e1151] [cursor=pointer]
+      - generic [ref=e1156]:
+        - generic [ref=e1157]:
+          - heading "إضافة مشروع جديد" [level=3] [ref=e1158]
+          - button [ref=e1160] [cursor=pointer]
+        - generic [ref=e1164]:
+          - generic [ref=e1165]:
+            - generic [ref=e1166]: اسم المشروع (عربي) *
+            - textbox "أدخل اسم المشروع بالعربية" [ref=e1167]
+          - generic [ref=e1168]:
+            - text: اسم المشروع (إنجليزي)
+            - textbox "Enter project name in English" [ref=e1169]
+          - generic [ref=e1170]:
+            - text: التصنيف
+            - combobox [ref=e1171]:
+              - option "ستاندات" [selected]
+              - option "أجنحة معارض"
+              - option "تصميم داخلي"
+              - option "لافتات"
+          - generic [ref=e1172]:
+            - text: صور المشروع
+            - generic [ref=e1173] [cursor=pointer]: اضغط لرفع الصور
+          - button "إضافة المشروع" [disabled] [ref=e1178]
+    - generic [ref=e585]:
+      - generic [ref=e586]:
+        - generic [ref=e587]: تواصل معنا
+        - heading "تواصل معنا" [level=2] [ref=e591]
+        - paragraph [ref=e592]: نحن هنا للإجابة على استفساراتكم ومناقشة مشاريعكم القادمة
+      - generic [ref=e593]:
+        - generic [ref=e595]:
+          - generic [ref=e602]:
+            - heading "العنوان" [level=3] [ref=e603]
+            - paragraph [ref=e604]: الرياض - الدمام، المملكة العربية السعودية
+          - link [ref=e605] [cursor=pointer]:
+            - /url: https://wa.me/966549884339
+            - generic [ref=e610]:
+              - heading "واتساب" [level=3] [ref=e611]
+              - paragraph [ref=e612]: +966 54 988 4339
+          - link "تواصل معنا مباشرة عبر واتساب" [ref=e613] [cursor=pointer]:
+            - /url: https://wa.me/966549884339
+        - generic [ref=e619]:
+          - generic [ref=e620]:
+            - text: الاسم الكامل
+            - textbox "الاسم الكامل" [ref=e621]:
+              - /placeholder: أدخل اسمك الكامل
+          - generic [ref=e622]:
+            - text: رقم الهاتف
+            - textbox "رقم الهاتف" [ref=e623]:
+              - /placeholder: +966 5X XXX XXXX
+          - generic [ref=e624]:
+            - text: رسالتك
+            - textbox "رسالتك" [ref=e625]:
+              - /placeholder: اكتب تفاصيل مشروعك أو استفسارك هنا...
+          - button "إرسال الرسالة" [ref=e626] [cursor=pointer]
+          - paragraph [ref=e627]: سيتم تحويلك إلى واتساب لإرسال رسالتك مباشرة
+  - contentinfo [ref=e628]:
+    - generic [ref=e629]:
+      - generic [ref=e630]:
+        - paragraph [ref=e632]: شركة اتحاد الألماس للمقاولات - حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع
+        - generic [ref=e633]:
+          - heading "روابط سريعة" [level=3] [ref=e634]
+          - list [ref=e635]:
+            - listitem [ref=e636]:
+              - button "من نحن" [ref=e637] [cursor=pointer]
+            - listitem [ref=e638]:
+              - button "خدماتنا" [ref=e639] [cursor=pointer]
+            - listitem [ref=e640]:
+              - button "أعمالنا" [ref=e641] [cursor=pointer]
+            - listitem [ref=e642]:
+              - button "تواصل معنا" [ref=e643] [cursor=pointer]
+        - generic [ref=e644]:
+          - heading "تواصل معنا" [level=3] [ref=e645]
+          - list [ref=e646]:
+            - listitem [ref=e647]:
+              - generic [ref=e651]: الرياض - الدمام، المملكة العربية السعودية
+            - listitem [ref=e652]:
+              - generic [ref=e655]: +966 54 988 4339
+            - listitem [ref=e656]:
+              - generic [ref=e660]: info@diamondunion.sa
+      - paragraph [ref=e662]: © 2026 شركة اتحاد الألماس للمقاولات. جميع الحقوق محفوظة.
+  - link "WhatsApp" [ref=e663] [cursor=pointer]:
+    - /url: https://wa.me/966549884339
+    - generic [ref=e666]: تواصل عبر واتساب
