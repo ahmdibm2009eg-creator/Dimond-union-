@@ -32,6 +32,9 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Skip caching for Supabase API requests — always network
+  if (url.hostname.includes('supabase')) return;
+
   // Static assets (hashed JS/CSS/images): cache-first for speed
   event.respondWith(
     caches.match(event.request).then((cached) => {
