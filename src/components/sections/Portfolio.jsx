@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { projects as seedProjects } from '@/lib/translations';
 import { base44, exportData, importData } from '@/api/base44Client';
+import { useRealtimeSync } from '@/lib/useRealtimeSync';
 import { Eye, Images, Lock, Palette, Pencil, Plus, Trash2, Type, X, Download, Upload } from 'lucide-react';
 import ProjectLightbox from '@/components/ProjectLightbox';
 import ProjectImageEditor from '@/components/ProjectImageEditor';
@@ -48,6 +49,8 @@ export default function Portfolio() {
   useEffect(() => {
     loadProjects();
   }, []);
+
+  useRealtimeSync(loadProjects);
 
   const projects = (entityProjects.length > 0 ? entityProjects : seedProjects).map(normalizeProject);
 

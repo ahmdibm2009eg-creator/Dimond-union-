@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { base44 } from '@/api/base44Client';
+import { useRealtimeSync } from './useRealtimeSync';
 
 export const DEFAULT_THEME = {
   primary: '356 72% 32%',
@@ -60,6 +61,8 @@ export function ThemeProvider({ children }) {
   }, []);
 
   useEffect(() => { loadTheme(); }, [loadTheme]);
+
+  useRealtimeSync(loadTheme);
 
   const saveTheme = useCallback(async (newTheme) => {
     setTheme(newTheme);

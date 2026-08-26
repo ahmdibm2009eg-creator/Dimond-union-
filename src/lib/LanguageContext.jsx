@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import { translations } from './translations';
 import { base44 } from '@/api/base44Client';
 import { applyOverrides, applyOverridesEn } from './contentUtils';
+import { useRealtimeSync } from './useRealtimeSync';
 
 const LanguageContext = createContext();
 
@@ -27,6 +28,8 @@ export function LanguageProvider({ children }) {
   useEffect(() => {
     loadOverrides();
   }, [loadOverrides, reloadTrigger]);
+
+  useRealtimeSync(loadOverrides);
 
   const reloadContent = useCallback(() => {
     setReloadTrigger(n => n + 1);

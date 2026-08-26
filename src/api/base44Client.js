@@ -1,72 +1,93 @@
-const DB_KEY = 'diamond_union_db_v2';
+import { supabase } from '@/lib/supabase';
 
-const getDB = () => {
-  try {
-    return JSON.parse(localStorage.getItem(DB_KEY)) || {};
-  } catch {
-    return {};
-  }
+// ── Real-time listeners ──────────────────────────────────────────────
+const listeners = new Set();
+const notify = () => listeners.forEach(fn => fn());
+
+export const onSync = (fn) => {
+  listeners.add(fn);
+  return () => listeners.delete(fn);
 };
 
-const setDB = (db) => localStorage.setItem(DB_KEY, JSON.stringify(db));
+// ── Real-time subscriptions ──────────────────────────────────────────
+let initialized = false;
 
-const getCollection = (name) => getDB()[name] || [];
+function initRealtime() {
+  if (initialized) return;
+  initialized = true;
 
-const setCollection = (name, items) => {
-  const db = getDB();
-  db[name] = items;
-  setDB(db);
-};
+  supabase
+    .channel('db-changes')
+    .on('postgres_changes', { event: '*', schema: 'public', table: 'projects' }, notify)
+    .on('postgres_changes', { event: '*', schema: 'public', table: 'site_content' }, notify)
+    .subscribe();
+}
 
-const nextId = (collection) => {
-  const items = getCollection(collection);
-  return items.length > 0 ? Math.max(...items.map(i => i.id)) + 1 : 1;
-};
-
-const entityMethods = (name) => ({
+// ── Entity methods ───────────────────────────────────────────────────
+const entityMethods = (tableName) => ({
   list: async (sortKey) => {
-    let items = getCollection(name);
-    if (sortKey) items.sort((a, b) => (a[sortKey] || 0) - (b[sortKey] || 0));
-    return items;
+    initRealtime();
+    let query = supabase.from(tableName).select('*');
+    if (sortKey) query = query.order(sortKey);
+    const { data, error } = await query;
+    if (error) throw error;
+    return data || [];
   },
+
   filter: async (query) => {
-    return getCollection(name).filter(item =>
-      Object.entries(query).every(([k, v]) => item[k] === v)
-    );
+    initRealtime();
+    let q = supabase.from(tableName).select('*');
+    for (const [k, v] of Object.entries(query)) {
+      q = q.eq(k, v);
+    }
+    const { data, error } = await q;
+    if (error) throw error;
+    return data || [];
   },
+
   create: async (data) => {
-    const items = getCollection(name);
-    const newItem = { id: nextId(name), ...data };
-    items.push(newItem);
-    setCollection(name, items);
-    return newItem;
+    const { data: created, error } = await supabase
+      .from(tableName)
+      .insert(data)
+      .select()
+      .single();
+    if (error) throw error;
+    return created;
   },
+
   update: async (id, data) => {
-    const items = getCollection(name);
-    const idx = items.findIndex(i => i.id === id);
-    if (idx === -1) throw new Error(`Item ${id} not found in ${name}`);
-    items[idx] = { ...items[idx], ...data };
-    setCollection(name, items);
-    return items[idx];
+    const { data: updated, error } = await supabase
+      .from(tableName)
+      .update(data)
+      .eq('id', id)
+      .select()
+      .single();
+    if (error) throw error;
+    return updated;
   },
+
   delete: async (id) => {
-    const items = getCollection(name);
-    setCollection(name, items.filter(i => i.id !== id));
+    const { error } = await supabase
+      .from(tableName)
+      .delete()
+      .eq('id', id);
+    if (error) throw error;
   },
 });
 
+// ── Seed data ────────────────────────────────────────────────────────
 const seedProjects = [
-  { id: 1, name_ar: 'جناح معرض رياضة', name_en: 'Riyada Exhibition Stand', category: 'exhibition', images: [
+  { name_ar: 'جناح معرض رياضة', name_en: 'Riyada Exhibition Stand', category: 'exhibition', images: [
     'https://picsum.photos/seed/exhibition1/800/600',
     'https://picsum.photos/seed/exhibition2/800/600',
     'https://picsum.photos/seed/exhibition3/800/600'
   ], order: 1 },
-  { id: 2, name_ar: 'تصميم داخلي لمكتب', name_en: 'Office Interior Design', category: 'interior', images: [
+  { name_ar: 'تصميم داخلي لمكتب', name_en: 'Office Interior Design', category: 'interior', images: [
     'https://picsum.photos/seed/interior1/800/600',
     'https://picsum.photos/seed/interior2/800/600',
     'https://picsum.photos/seed/interior3/800/600'
   ], order: 2 },
-  { id: 3, name_ar: 'لافتة خارجية', name_en: 'Outdoor Signage', category: 'signage', images: [
+  { name_ar: 'لافتة خارجية', name_en: 'Outdoor Signage', category: 'signage', images: [
     'https://picsum.photos/seed/signage1/800/600',
     'https://picsum.photos/seed/signage2/800/600',
     'https://picsum.photos/seed/signage3/800/600'
@@ -74,37 +95,61 @@ const seedProjects = [
 ];
 
 const seedContent = [
-  { id: 1, content_key: 'hero_title_ar', content_value: 'اتحاد الألماس' },
-  { id: 2, content_key: 'hero_title_en', content_value: 'Diamond Union' },
-  { id: 3, content_key: 'hero_subtitle_ar', content_value: 'حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع' },
-  { id: 4, content_key: 'hero_subtitle_en', content_value: 'Integrated solutions in contracting, exhibitions, finishing, and project setup' },
+  { content_key: 'hero_title_ar', value_ar: 'اتحاد الألماس', value_en: 'Diamond Union' },
+  { content_key: 'hero_title_en', value_ar: 'Diamond Union', value_en: 'Diamond Union' },
+  { content_key: 'hero_subtitle_ar', value_ar: 'حلول متكاملة في المقاولات، المعارض، التشطيبات، وتجهيز المشاريع', value_en: 'Integrated solutions in contracting, exhibitions, finishing, and project setup' },
+  { content_key: 'hero_subtitle_en', value_ar: 'Integrated solutions in contracting, exhibitions, finishing, and project setup', value_en: 'Integrated solutions in contracting, exhibitions, finishing, and project setup' },
 ];
 
-const initDB = () => {
-  const db = getDB();
-  if (!db.projects) db.projects = seedProjects;
-  if (!db.site_content) db.site_content = seedContent;
-  if (!db.theme) db.theme = [];
-  setDB(db);
-};
+async function seedIfNeeded() {
+  try {
+    const { count: projectCount } = await supabase
+      .from('projects').select('*', { count: 'exact', head: true });
+    if (projectCount === 0) {
+      await supabase.from('projects').insert(seedProjects);
+    }
 
-initDB();
+    const { count: contentCount } = await supabase
+      .from('site_content').select('*', { count: 'exact', head: true });
+    if (contentCount === 0) {
+      await supabase.from('site_content').insert(seedContent);
+    }
+  } catch (err) {
+    console.error('Seed failed:', err);
+  }
+}
 
+seedIfNeeded();
+
+// ── File upload ──────────────────────────────────────────────────────
+const BUCKET = 'project-images';
+
+async function ensureBucket() {
+  const { error } = await supabase.storage.getBucket(BUCKET);
+  if (error) {
+    await supabase.storage.createBucket(BUCKET, { public: true });
+  }
+}
+
+// ── Exported API ─────────────────────────────────────────────────────
 export const base44 = {
   entities: {
     Project: entityMethods('projects'),
     SiteContent: entityMethods('site_content'),
-    Theme: entityMethods('theme'),
   },
   integrations: {
     Core: {
       UploadFile: async ({ file }) => {
-        return new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve({ file_url: reader.result });
-          reader.onerror = () => reject(new Error('File read failed'));
-          reader.readAsDataURL(file);
+        await ensureBucket();
+        const ext = file.name.split('.').pop() || 'bin';
+        const path = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`;
+        const { error } = await supabase.storage.from(BUCKET).upload(path, file, {
+          contentType: file.type,
+          upsert: false,
         });
+        if (error) throw error;
+        const { data } = supabase.storage.from(BUCKET).getPublicUrl(path);
+        return { file_url: data.publicUrl };
       },
     },
   },
@@ -115,10 +160,16 @@ export const base44 = {
   },
 };
 
-// Data export/import helpers
-export const exportData = () => {
-  const db = getDB();
-  const blob = new Blob([JSON.stringify(db, null, 2)], { type: 'application/json' });
+// ── Data export/import ───────────────────────────────────────────────
+export const exportData = async () => {
+  const [projects, content] = await Promise.all([
+    base44.entities.Project.list(),
+    base44.entities.SiteContent.list(),
+  ]);
+  const blob = new Blob(
+    [JSON.stringify({ projects, site_content: content }, null, 2)],
+    { type: 'application/json' }
+  );
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
@@ -127,20 +178,19 @@ export const exportData = () => {
   URL.revokeObjectURL(url);
 };
 
-export const importData = (file) => new Promise((resolve, reject) => {
-  const reader = new FileReader();
-  reader.onload = (e) => {
-    try {
-      const data = JSON.parse(e.target.result);
-      if (!data.projects && !data.site_content && !data.theme) {
-        throw new Error('Invalid backup file');
-      }
-      setDB(data);
-      resolve(data);
-    } catch (err) {
-      reject(err);
-    }
-  };
-  reader.onerror = () => reject(new Error('Failed to read file'));
-  reader.readAsText(file);
-});
+export const importData = async (file) => {
+  const text = await file.text();
+  const data = JSON.parse(text);
+  if (!data.projects && !data.site_content) {
+    throw new Error('Invalid backup file');
+  }
+  if (data.projects?.length) {
+    await supabase.from('projects').delete().neq('id', 0);
+    await supabase.from('projects').insert(data.projects);
+  }
+  if (data.site_content?.length) {
+    await supabase.from('site_content').delete().neq('id', 0);
+    await supabase.from('site_content').insert(data.site_content);
+  }
+  return data;
+};
